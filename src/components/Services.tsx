@@ -112,14 +112,16 @@ export default function Services() {
                 {/* Card image if available */}
                 {cardImageMap[item.id] && (
                   <div className="relative h-36 w-full overflow-hidden">
-                    <Image
-                      src={cardImageMap[item.id]}
-                      alt={item.title}
-                      fill
-                      className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 640px) 100vw, 25vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-darker" />
+                    <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-105">
+                      <Image
+                        src={cardImageMap[item.id]}
+                        alt={item.title}
+                        fill
+                        className="object-cover object-center"
+                        sizes="(max-width: 640px) 100vw, 25vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-darker" />
+                    </div>
                   </div>
                 )}
 
