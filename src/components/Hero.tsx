@@ -90,7 +90,7 @@ export default function Hero() {
           </div>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full bg-brand-blue/60" />
-            <span>Fully Licensed & Insured</span>
+            <span>Code Compliant Installation</span>
           </div>
         </div>
       </div>
