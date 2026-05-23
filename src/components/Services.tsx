@@ -62,8 +62,8 @@ export default function Services() {
             <div className="absolute inset-0 opacity-[0.22] group-hover:opacity-[0.45] transition-opacity duration-500">
               <Image src="/Assets/Surveillance.jpg" alt="" fill className="object-cover object-center" sizes="50vw" />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-brand-navy/20" />
-            <div className="absolute inset-0 bg-gradient-to-l from-brand-dark/80 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/85 to-brand-navy/15" />
+            <div className="absolute inset-0 bg-gradient-to-tl from-brand-dark/75 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
 
             <div className="relative z-10 p-8 lg:p-10 flex flex-col flex-1">
               <div className="flex items-center gap-3 mb-5">
@@ -102,8 +102,8 @@ export default function Services() {
             <div className="absolute inset-0 opacity-[0.20] group-hover:opacity-[0.42] transition-opacity duration-500">
               <Image src="/Assets/tv_orbis.png" alt="" fill className="object-cover object-center" sizes="50vw" />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1a1030] via-[#1a1030]/90 to-[#1a1030]/20" />
-            <div className="absolute inset-0 bg-gradient-to-l from-brand-dark/80 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#1a1030] via-[#1a1030]/85 to-[#1a1030]/15" />
+            <div className="absolute inset-0 bg-gradient-to-tl from-brand-dark/75 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
 
             <div className="relative z-10 p-8 lg:p-10 flex flex-col flex-1">
               <div className="flex items-center gap-3 mb-5">
