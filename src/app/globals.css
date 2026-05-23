@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #080D1A;
+    color: #ffffff;
+  }
+
+  ::selection {
+    background-color: #0EA8E1;
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 40px rgba(14, 168, 225, 0.15);
+  }
+
+  .glow-blue-sm {
+    box-shadow: 0 0 20px rgba(14, 168, 225, 0.1);
+  }
+
+  .border-gradient {
+    border: 1px solid transparent;
+    background-clip: padding-box;
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "cta": "Solicitar Presupuesto"
+  },
+  "hero": {
+    "badge": "Reading, MA — Greater Boston Area",
+    "headline": "Proteja Lo Que",
+    "headlineAccent": "Más Importa.",
+    "subheadline": "Instalación profesional de cámaras de seguridad, sistemas de intercomunicación, cableado estructurado e infraestructura de TI en Greater Boston.",
+    "cta": "Solicitar Presupuesto",
+    "ctaSecondary": "Nuestros Servicios"
+  },
+  "services": {
+    "title": "Lo Que Hacemos",
+    "subtitle": "Soluciones integrales para clientes residenciales y comerciales en Greater Boston.",
+    "items": [
+      {
+        "id": "cameras",
+        "title": "Cámaras de Seguridad",
+        "badge": "Más Popular",
+        "description": "Instalación profesional de sistemas de vigilancia HD y 4K para hogares y empresas. Cobertura interior, exterior, diurna y nocturna — totalmente personalizada. Vea todo, desde cualquier lugar, en cualquier momento.",
+        "features": ["Resolución HD & 4K", "Monitoreo remoto por app", "Visión nocturna en color", "Almacenamiento local y nube", "Residencial & comercial", "Sistemas exteriores resistentes"]
+      },
+      {
+        "id": "cabling",
+        "title": "Cableado Estructurado",
+        "badge": "",
+        "description": "Cableado de red y baja tensión limpio y profesional para hogares y empresas. Desde Cat6 hasta fibra óptica y coaxial — instalado correctamente desde el principio.",
+        "features": ["Cat5e / Cat6 / Cat6A", "Fibra óptica", "Coaxial & HDMI", "Configuración de patch panel", "Instalación embutida", "Residencial & comercial"]
+      },
+      {
+        "id": "intercom",
+        "title": "Sistemas de Intercomunicación",
+        "badge": "",
+        "description": "Sistemas modernos de intercomunicación IP y control de acceso para edificios residenciales y propiedades comerciales. Gestione el acceso desde cualquier lugar.",
+        "features": ["Sistemas basados en IP", "Control por app", "Integración con videoportero", "Soporte multi-unidad", "Escalable"]
+      },
+      {
+        "id": "orbis",
+        "title": "Orbis para Edificios",
+        "badge": "Suscripción",
+        "description": "Orbis es una plataforma avanzada de control de acceso y gestión de visitantes para edificios comerciales. Entregada como suscripción gestionada — hardware, software y soporte incluidos.",
+        "features": ["Modelo de suscripción", "Plataforma en la nube", "Gestión de visitantes", "Registros y análisis", "Soporte 24/7"]
+      },
+      {
+        "id": "it",
+        "title": "Servicios de TI Microsoft",
+        "badge": "",
+        "description": "Servicios de TI de nivel empresarial con profunda experiencia en Microsoft. Desde Active Directory y Windows Server hasta hardening de seguridad y gestión de endpoints.",
+        "features": ["Active Directory", "Windows Server", "Hardening de seguridad", "Gestión de endpoints", "Certificación MCSE"]
+      }
+    ]
+  },
+  "trust": {
+    "title": "Por Qué DTX Solution",
+    "subtitle": "Llevamos experiencia de nivel empresarial a cada proyecto, sin importar el tamaño.",
+    "items": [
+      {
+        "title": "Experiencia Certificada",
+        "description": "Certificación MCSE con años de experiencia gestionando entornos complejos en múltiples países."
+      },
+      {
+        "title": "Local & Ágil",
+        "description": "Ubicados en Reading, MA — tiempos de respuesta rápidos y servicio presencial en toda Greater Boston."
+      },
+      {
+        "title": "Soluciones Integrales",
+        "description": "Nos encargamos de todo: diseño, instalación, configuración y soporte continuo."
+      },
+      {
+        "title": "Mentalidad Security-First",
+        "description": "Cada solución se diseña con líneas base de seguridad y mejores prácticas desde el inicio."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "¿Listo para proteger su propiedad o mejorar su infraestructura? Hablemos.",
+    "name": "Su Nombre",
+    "email": "Dirección de Email",
+    "phone": "Teléfono (opcional)",
+    "service": "Servicio de Interés",
+    "message": "Cuéntenos sobre su proyecto",
+    "submit": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado! Nos pondremos en contacto pronto.",
+    "services": ["Cámaras de Seguridad", "Cableado Estructurado", "Sistemas de Intercomunicación", "Orbis para Edificios", "Servicios de TI Microsoft", "Otro"]
+  },
+  "footer": {
+    "tagline": "Seguridad inteligente y soluciones de TI para Greater Boston.",
+    "rights": "Todos los derechos reservados.",
+    "links": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio"
+    }
+  }
+}

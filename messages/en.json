@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Get a Free Quote"
+  },
+  "hero": {
+    "badge": "Reading, MA — Greater Boston Area",
+    "headline": "Protect What",
+    "headlineAccent": "Matters Most.",
+    "subheadline": "Professional installation of security cameras, intercom systems, structured cabling, and IT infrastructure across Greater Boston.",
+    "cta": "Get a Free Quote",
+    "ctaSecondary": "Our Services"
+  },
+  "services": {
+    "title": "What We Do",
+    "subtitle": "End-to-end solutions for residential and commercial clients across Greater Boston.",
+    "items": [
+      {
+        "id": "cameras",
+        "title": "Security Cameras",
+        "badge": "Most Popular",
+        "description": "Professional installation of HD and 4K surveillance systems for homes and businesses. Indoor, outdoor, day & night coverage — fully customized to your property. See everything, from anywhere, at any time.",
+        "features": ["HD & 4K resolution", "Remote monitoring via app", "Color night vision", "Cloud & local storage", "Residential & commercial", "Weatherproof outdoor systems"]
+      },
+      {
+        "id": "cabling",
+        "title": "Structured Cabling",
+        "badge": "",
+        "description": "Clean, professional network and low-voltage cabling for homes and businesses. From Cat6 data runs to coaxial and fiber — installed right the first time.",
+        "features": ["Cat5e / Cat6 / Cat6A", "Fiber optic", "Coaxial & HDMI", "Patch panel setup", "Clean in-wall routing", "Residential & commercial"]
+      },
+      {
+        "id": "intercom",
+        "title": "Intercom Systems",
+        "badge": "",
+        "description": "Modern IP intercom and access control systems for residential buildings and commercial properties. Manage entry from anywhere, on any device.",
+        "features": ["IP-based systems", "Mobile app control", "Video doorbell integration", "Multi-unit support", "Scalable for any size"]
+      },
+      {
+        "id": "orbis",
+        "title": "Orbis for Buildings",
+        "badge": "Subscription",
+        "description": "Orbis is a cutting-edge access control and visitor management platform for commercial buildings. Delivered as a managed subscription — hardware, software, and ongoing support included.",
+        "features": ["Managed subscription model", "Cloud-based platform", "Visitor management", "Access logs & analytics", "24/7 support"]
+      },
+      {
+        "id": "it",
+        "title": "Microsoft IT Services",
+        "badge": "",
+        "description": "Enterprise-grade IT services with deep Microsoft expertise. From Active Directory and Windows Server to endpoint security hardening and fleet management.",
+        "features": ["Active Directory", "Windows Server", "Security hardening", "Endpoint management", "MCSE-certified"]
+      }
+    ]
+  },
+  "trust": {
+    "title": "Why Choose DTX Solution",
+    "subtitle": "We bring enterprise-level expertise to every project, regardless of size.",
+    "items": [
+      {
+        "title": "Certified Expertise",
+        "description": "MCSE-certified with years of enterprise experience managing complex environments across multiple countries."
+      },
+      {
+        "title": "Local & Responsive",
+        "description": "Based in Reading, MA — fast response times and on-site service anywhere in Greater Boston."
+      },
+      {
+        "title": "Turnkey Solutions",
+        "description": "We handle everything: design, installation, configuration, and ongoing support."
+      },
+      {
+        "title": "Security-First Mindset",
+        "description": "Every solution is designed with security baselines and best practices from day one."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to secure your property or upgrade your infrastructure? Let's talk.",
+    "name": "Your Name",
+    "email": "Email Address",
+    "phone": "Phone (optional)",
+    "service": "Service of Interest",
+    "message": "Tell us about your project",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent! We'll be in touch shortly.",
+    "services": ["Security Cameras", "Structured Cabling", "Intercom Systems", "Orbis for Buildings", "Microsoft IT Services", "Other"]
+  },
+  "footer": {
+    "tagline": "Smart security and IT solutions for Greater Boston.",
+    "rights": "All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  }
+}

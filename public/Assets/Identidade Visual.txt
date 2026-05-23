@@ -1,0 +1,7 @@
+Cores (em código Hexadecimal):
+Azul Principal (DTX): #1E3A60 alterado para 182855 (Um azul escuro e sólido, transmitindo seriedade e confiança).
+Azul Claro (Símbolo e Detalhes): #2A9FD8 Alterado para (0EA8E1)(Um azul mais vibrante, evocando tecnologia, inovação e modernidade).
+Cinza Azulado (SOLUTION): #5C7C9E  (Alterado para 4D7B9A )(Um tom mais suave que complementa o azul principal, garantindo legibilidade e sofisticação).
+Fontes (Tipografia):
+Para "DTX": Uma fonte sans-serif (sem serifa) robusta e geométrica, que lembra a família Montserrat Bold ou Open Sans ExtraBold. Ela é moderna, tem boa presença e excelente legibilidade.
+Para "SOLUTION": Uma fonte sans-serif mais leve e clean, que se assemelha à Open Sans Light ou Lato Light. Ela complementa a força do "DTX" sem competir com ele, mantendo a clareza.
