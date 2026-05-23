@@ -36,7 +36,7 @@
         "title": "Website Development",
         "badge": "",
         "description": "Custom-coded, responsive websites for small and medium businesses. Modern design, zero headaches — we handle everything from development to hosting, domain, and ongoing maintenance.",
-        "features": ["Custom development", "Responsive & mobile-first", "Hosting & domain included", "Ongoing maintenance", "SEO-ready", "Fast & lightweight"]
+        "features": ["Custom development", "Responsive & mobile-first", "Hosting & domain included*", "Ongoing maintenance", "SEO-ready", "Fast & lightweight"]
       },
       {
         "id": "intercom",

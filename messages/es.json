@@ -36,7 +36,7 @@
         "title": "Desarrollo Web",
         "badge": "",
         "description": "Sitios web responsivos con código personalizado para pequeñas y medianas empresas. Diseño moderno, cero preocupaciones — nos encargamos de todo, desde el desarrollo hasta el hosting, dominio y mantenimiento.",
-        "features": ["Desarrollo personalizado", "Responsivo & mobile-first", "Hosting & dominio incluidos", "Mantenimiento continuo", "Optimizado para SEO", "Rápido y ligero"]
+        "features": ["Desarrollo personalizado", "Responsivo & mobile-first", "Hosting & dominio incluidos*", "Mantenimiento continuo", "Optimizado para SEO", "Rápido y ligero"]
       },
       {
         "id": "intercom",
