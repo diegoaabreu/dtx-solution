@@ -28,8 +28,8 @@
         "id": "orbis",
         "title": "Orbis para Edifícios",
         "badge": "Assinatura",
-        "description": "O Orbis é uma plataforma avançada de controle de acesso e gestão de visitantes para edifícios comerciais. Entregue como assinatura gerenciada — hardware, software e suporte contínuo incluídos.",
-        "features": ["Modelo de assinatura", "Plataforma em nuvem", "Gestão de visitantes", "Registros e análises", "Suporte 24/7"]
+        "description": "O Orbis é uma plataforma de sinalização digital que transforma qualquer tela em um diretório virtual inteligente para seu edifício. A DTX Solution instala e gerencia os displays no lobby — inquilinos e visitantes sempre veem informações atualizadas do prédio.",
+        "features": ["Diretório virtual do edifício", "Instalação de tela no lobby", "Modo kiosk via browser", "Conteúdo gerenciado pela web", "Modelo de assinatura", "Identidade visual personalizada"]
       },
       {
         "id": "intercom",

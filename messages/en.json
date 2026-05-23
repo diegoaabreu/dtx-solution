@@ -28,8 +28,8 @@
         "id": "orbis",
         "title": "Orbis for Buildings",
         "badge": "Subscription",
-        "description": "Orbis is a cutting-edge access control and visitor management platform for commercial buildings. Delivered as a managed subscription — hardware, software, and ongoing support included.",
-        "features": ["Managed subscription model", "Cloud-based platform", "Visitor management", "Access logs & analytics", "24/7 support"]
+        "description": "Orbis is a digital signage platform that turns any screen into a smart virtual directory for your building. DTX Solution installs and manages the lobby displays — tenants and visitors always see up-to-date building information.",
+        "features": ["Virtual building directory", "Lobby screen installation", "Browser-based kiosk mode", "Web-managed content", "Subscription model", "Custom branding"]
       },
       {
         "id": "intercom",
