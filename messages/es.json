@@ -51,6 +51,13 @@
         "badge": "",
         "description": "Servicios de TI de nivel empresarial con profunda experiencia en Microsoft. Desde administración de Windows Server hasta políticas de seguridad de endpoints y gestión de flota.",
         "features": ["Windows Server Infrastructure", "Active Directory", "Azure Cloud", "Políticas de seguridad", "Gestión de endpoints", "Certificación MCSE", "Microsoft Configuration Manager"]
+      },
+      {
+        "id": "web",
+        "title": "Desarrollo Web",
+        "badge": "",
+        "description": "Sitios web responsivos con código personalizado para pequeñas y medianas empresas. Diseño moderno, cero preocupaciones — nos encargamos de todo, desde el desarrollo hasta el hosting, dominio y mantenimiento.",
+        "features": ["Desarrollo personalizado", "Responsivo & mobile-first", "Hosting & dominio incluidos", "Mantenimiento continuo", "Optimizado para SEO", "Rápido y ligero"]
       }
     ]
   },
@@ -87,7 +94,7 @@
     "submit": "Enviar Mensaje",
     "sending": "Enviando...",
     "success": "¡Mensaje enviado! Nos pondremos en contacto pronto.",
-    "services": ["Cámaras de Seguridad", "Cableado Estructurado", "Sistemas de Intercomunicación", "Orbis para Edificios", "Servicios de TI Microsoft", "Otro"]
+    "services": ["Cámaras de Seguridad", "Cableado Estructurado", "Sistemas de Intercomunicación", "Orbis para Edificios", "Servicios de TI Microsoft", "Desarrollo Web", "Otro"]
   },
   "footer": {
     "tagline": "Seguridad inteligente y soluciones de TI para Greater Boston.",

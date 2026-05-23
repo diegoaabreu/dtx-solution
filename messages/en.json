@@ -51,6 +51,13 @@
         "badge": "",
         "description": "Enterprise-grade IT services with deep Microsoft expertise. From Windows Server administration to Endpoint security policies and fleet management.",
         "features": ["Windows Server Infrastructure", "Active Directory", "Azure Cloud", "Security policies", "Endpoint management", "MCSE-certified", "Microsoft Configuration Manager"]
+      },
+      {
+        "id": "web",
+        "title": "Website Development",
+        "badge": "",
+        "description": "Custom-coded, responsive websites for small and medium businesses. Modern design, zero headaches — we handle everything from development to hosting, domain, and ongoing maintenance.",
+        "features": ["Custom development", "Responsive & mobile-first", "Hosting & domain included", "Ongoing maintenance", "SEO-ready", "Fast & lightweight"]
       }
     ]
   },
@@ -87,7 +94,7 @@
     "submit": "Send Message",
     "sending": "Sending...",
     "success": "Message sent! We'll be in touch shortly.",
-    "services": ["Security Cameras", "Structured Cabling", "Intercom Systems", "Orbis for Buildings", "Microsoft IT Services", "Other"]
+    "services": ["Security Cameras", "Structured Cabling", "Intercom Systems", "Orbis for Buildings", "Microsoft IT Services", "Website Development", "Other"]
   },
   "footer": {
     "tagline": "Smart security and IT solutions for Greater Boston.",

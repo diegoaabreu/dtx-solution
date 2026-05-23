@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Camera, PhoneCall, Building2, Server, Network, Check, ArrowRight } from "lucide-react";
+import { Camera, PhoneCall, Building2, Server, Network, Monitor, Check, ArrowRight } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   cameras: Camera,
@@ -10,6 +10,7 @@ const iconMap: Record<string, React.ElementType> = {
   intercom: PhoneCall,
   orbis: Building2,
   it: Server,
+  web: Monitor,
 };
 
 const cardImageMap: Record<string, string> = {
@@ -132,7 +133,7 @@ export default function Services() {
         </div>
 
         {/* Bottom row: remaining services */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {rest.map((item) => {
             const Icon = iconMap[item.id] || Server;
 
