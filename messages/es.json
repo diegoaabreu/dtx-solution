@@ -49,8 +49,8 @@
         "id": "it",
         "title": "Servicios de TI Microsoft",
         "badge": "",
-        "description": "Servicios de TI de nivel empresarial con profunda experiencia en Microsoft. Desde administración de Windows Server hasta políticas de seguridad de endpoints.",
-        "features": ["Windows Server", "Active Directory", "Azure Cloud", "Políticas de seguridad", "Microsoft Configuration Manager", "Gestión de endpoints", "Certificación MCSE"]
+        "description": "Servicios de TI de nivel empresarial con profunda experiencia en Microsoft. Desde administración de Windows Server hasta políticas de seguridad de endpoints y gestión de flota.",
+        "features": ["Windows Server", "Active Directory", "Azure Cloud", "Políticas de seguridad", "Gestión de endpoints", "Certificación MCSE", "Microsoft Configuration Manager"]
       }
     ]
   },
