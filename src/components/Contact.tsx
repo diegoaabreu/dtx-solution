@@ -45,7 +45,7 @@ export default function Contact() {
           <div className="lg:col-span-2 flex flex-col gap-6">
             <div className="bg-brand-darker border border-white/[0.07] rounded-2xl p-6">
               <h3 className="font-display font-semibold text-white mb-4">Contact Info</h3>
-              <div className="space-y-4">
+              <address className="not-italic space-y-4">
                 <a
                   href="mailto:diego@dtxsolution.com"
                   className="flex items-center gap-3 text-white/50 hover:text-brand-blue transition-colors text-sm group"
@@ -60,7 +60,11 @@ export default function Contact() {
                   <Phone size={16} className="shrink-0" />
                   (857) 829-0077
                 </a>
-              </div>
+                <p className="flex items-center gap-3 text-white/50 text-sm">
+                  <span className="shrink-0 w-4 text-center">📍</span>
+                  Reading, MA — Greater Boston Area
+                </p>
+              </address>
 
               <div className="mt-6 pt-6 border-t border-white/[0.07]">
                 <p className="text-white/30 text-xs mb-3">Follow us</p>
