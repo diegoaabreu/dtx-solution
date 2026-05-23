@@ -32,6 +32,13 @@
         "features": ["Diretório virtual do edifício", "Instalação de tela no lobby", "Conteúdo e Layout dinâmicos", "Conteúdo gerenciado pela web", "Modelo de assinatura", "Identidade visual personalizada"]
       },
       {
+        "id": "web",
+        "title": "Desenvolvimento de Websites",
+        "badge": "",
+        "description": "Websites responsivos com código personalizado para pequenas e médias empresas. Design moderno, zero preocupação — cuidamos de tudo, do desenvolvimento à hospedagem, domínio e manutenção.",
+        "features": ["Desenvolvimento personalizado", "Responsivo & mobile-first", "Hospedagem & domínio incluídos", "Manutenção contínua", "Otimizado para SEO", "Rápido e leve"]
+      },
+      {
         "id": "intercom",
         "title": "Sistemas de Interfone",
         "badge": "",
@@ -51,13 +58,6 @@
         "badge": "",
         "description": "Serviços de TI de nível enterprise com expertise profunda em Microsoft. De administração de Windows Server a políticas de segurança de endpoints e gestão de frota.",
         "features": ["Windows Server Infrastructure", "Active Directory", "Azure Cloud", "Políticas de segurança", "Gestão de endpoints", "Certificação MCSE", "Microsoft Configuration Manager"]
-      },
-      {
-        "id": "web",
-        "title": "Desenvolvimento de Websites",
-        "badge": "",
-        "description": "Websites responsivos com código personalizado para pequenas e médias empresas. Design moderno, zero preocupação — cuidamos de tudo, do desenvolvimento à hospedagem, domínio e manutenção.",
-        "features": ["Desenvolvimento personalizado", "Responsivo & mobile-first", "Hospedagem & domínio incluídos", "Manutenção contínua", "Otimizado para SEO", "Rápido e leve"]
       }
     ]
   },

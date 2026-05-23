@@ -14,6 +14,7 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 const cardImageMap: Record<string, string> = {
+  web: "/Assets/coding.png",
   cabling: "/Assets/cabling.jpg",
   intercom: "/Assets/Intercom.png",
   it: "/Assets/datacenter.png",

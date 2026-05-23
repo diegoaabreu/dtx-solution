@@ -32,6 +32,13 @@
         "features": ["Virtual building directory", "Lobby screen installation", "Dynamic content and Layout", "Web-managed content", "Subscription model", "Custom branding"]
       },
       {
+        "id": "web",
+        "title": "Website Development",
+        "badge": "",
+        "description": "Custom-coded, responsive websites for small and medium businesses. Modern design, zero headaches — we handle everything from development to hosting, domain, and ongoing maintenance.",
+        "features": ["Custom development", "Responsive & mobile-first", "Hosting & domain included", "Ongoing maintenance", "SEO-ready", "Fast & lightweight"]
+      },
+      {
         "id": "intercom",
         "title": "Intercom Systems",
         "badge": "",
@@ -51,13 +58,6 @@
         "badge": "",
         "description": "Enterprise-grade IT services with deep Microsoft expertise. From Windows Server administration to Endpoint security policies and fleet management.",
         "features": ["Windows Server Infrastructure", "Active Directory", "Azure Cloud", "Security policies", "Endpoint management", "MCSE-certified", "Microsoft Configuration Manager"]
-      },
-      {
-        "id": "web",
-        "title": "Website Development",
-        "badge": "",
-        "description": "Custom-coded, responsive websites for small and medium businesses. Modern design, zero headaches — we handle everything from development to hosting, domain, and ongoing maintenance.",
-        "features": ["Custom development", "Responsive & mobile-first", "Hosting & domain included", "Ongoing maintenance", "SEO-ready", "Fast & lightweight"]
       }
     ]
   },
