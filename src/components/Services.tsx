@@ -15,7 +15,6 @@ const iconMap: Record<string, React.ElementType> = {
 const cardImageMap: Record<string, string> = {
   cabling: "/Assets/cabling.jpg",
   intercom: "/Assets/Intercom.png",
-  orbis: "/Assets/tv_orbis.png",
   it: "/Assets/datacenter.png",
 };
 
@@ -31,8 +30,9 @@ export default function Services() {
   const t = useTranslations("services");
   const items = t.raw("items") as ServiceItem[];
 
-  const featured = items.find((i) => i.id === "cameras")!;
-  const rest = items.filter((i) => i.id !== "cameras");
+  const cameras = items.find((i) => i.id === "cameras")!;
+  const orbis = items.find((i) => i.id === "orbis")!;
+  const rest = items.filter((i) => i.id !== "cameras" && i.id !== "orbis");
 
   return (
     <section id="services" className="py-24 lg:py-32 relative">
@@ -49,67 +49,98 @@ export default function Services() {
           <p className="text-white/50 text-lg max-w-xl mx-auto">{t("subtitle")}</p>
         </div>
 
-        {/* Featured: Security Cameras — full width */}
-        <div className="mb-6 rounded-2xl overflow-hidden border border-brand-blue/25 bg-gradient-to-br from-brand-navy via-[#0f1f40] to-brand-dark relative group hover:border-brand-blue/40 transition-all duration-300"
-          style={{ boxShadow: "0 0 60px rgba(14,168,225,0.07)" }}>
+        {/* Top row: Cameras + Orbis */}
+        <div className="mb-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-          {/* Background image */}
-          <div className="absolute inset-0 opacity-[0.18] overflow-hidden rounded-2xl">
-            <Image
-              src="/Assets/Surveillance.jpg"
-              alt=""
-              fill
-              className="object-cover object-center"
-              sizes="100vw"
-            />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-transparent" />
+          {/* Security Cameras */}
+          <div
+            className="rounded-2xl overflow-hidden border border-brand-blue/25 bg-gradient-to-br from-brand-navy via-[#0f1f40] to-brand-dark relative group hover:border-brand-blue/40 transition-all duration-300 flex flex-col"
+            style={{ boxShadow: "0 0 60px rgba(14,168,225,0.07)" }}
+          >
+            <div className="absolute inset-0 opacity-[0.18]">
+              <Image src="/Assets/Surveillance.jpg" alt="" fill className="object-cover object-center" sizes="50vw" />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/70 to-brand-dark/95" />
 
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-12">
-            <div>
+            <div className="relative z-10 p-8 lg:p-10 flex flex-col flex-1">
               <div className="flex items-center gap-3 mb-5">
                 <div className="p-3 rounded-xl bg-brand-blue/20 text-brand-blue">
-                  <Camera size={28} strokeWidth={1.5} />
+                  <Camera size={26} strokeWidth={1.5} />
                 </div>
                 <span className="bg-brand-blue/20 text-brand-blue border border-brand-blue/30 text-xs font-semibold px-3 py-1 rounded-full">
-                  {featured.badge}
+                  {cameras.badge}
                 </span>
               </div>
-              <h3 className="font-display text-3xl font-bold text-white mb-4">{featured.title}</h3>
-              <p className="text-white/60 leading-relaxed mb-6">{featured.description}</p>
+              <h3 className="font-display text-2xl font-bold text-white mb-3">{cameras.title}</h3>
+              <p className="text-white/60 leading-relaxed mb-6 text-sm">{cameras.description}</p>
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-2.5 mb-8">
+                {cameras.features.map((f) => (
+                  <li key={f} className="flex items-center gap-2 text-sm text-white/70">
+                    <Check size={13} className="text-brand-blue shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue/90 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-brand-blue/25 text-sm group/btn"
+                className="mt-auto inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue/90 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-brand-blue/25 text-sm group/btn w-fit"
               >
                 Get a Free Quote
                 <ArrowRight size={15} className="transition-transform duration-200 group-hover/btn:translate-x-1" />
               </a>
             </div>
-            <div className="flex items-center">
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 w-full">
-                {featured.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2.5 text-sm text-white/70">
-                    <Check size={15} className="text-brand-blue shrink-0" />
+          </div>
+
+          {/* Orbis */}
+          <div
+            className="rounded-2xl overflow-hidden border border-purple-500/20 bg-gradient-to-br from-[#1a1030] via-[#140d28] to-brand-dark relative group hover:border-purple-500/35 transition-all duration-300 flex flex-col"
+            style={{ boxShadow: "0 0 60px rgba(168,85,247,0.05)" }}
+          >
+            <div className="absolute inset-0 opacity-[0.14]">
+              <Image src="/Assets/tv_orbis.png" alt="" fill className="object-cover object-center" sizes="50vw" />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-[#1a1030]/80 to-brand-dark/95" />
+
+            <div className="relative z-10 p-8 lg:p-10 flex flex-col flex-1">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="p-3 rounded-xl bg-purple-500/15 text-purple-300">
+                  <Building2 size={26} strokeWidth={1.5} />
+                </div>
+                <span className="bg-purple-500/15 text-purple-300 border border-purple-500/20 text-xs font-semibold px-3 py-1 rounded-full">
+                  {orbis.badge}
+                </span>
+              </div>
+              <h3 className="font-display text-2xl font-bold text-white mb-3">{orbis.title}</h3>
+              <p className="text-white/60 leading-relaxed mb-6 text-sm">{orbis.description}</p>
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-2.5 mb-8">
+                {orbis.features.map((f) => (
+                  <li key={f} className="flex items-center gap-2 text-sm text-white/70">
+                    <Check size={13} className="text-purple-400/70 shrink-0" />
                     {f}
                   </li>
                 ))}
               </ul>
+              <a
+                href="#contact"
+                className="mt-auto inline-flex items-center gap-2 bg-purple-600/80 hover:bg-purple-600 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-purple-500/20 text-sm group/btn w-fit"
+              >
+                Get a Free Quote
+                <ArrowRight size={15} className="transition-transform duration-200 group-hover/btn:translate-x-1" />
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Rest: 2x2 grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {/* Bottom row: remaining services */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {rest.map((item) => {
             const Icon = iconMap[item.id] || Server;
-            const isOrbis = item.id === "orbis";
 
             return (
               <div
                 key={item.id}
                 className="relative rounded-2xl overflow-hidden border border-white/[0.07] bg-brand-darker hover:border-white/[0.15] transition-all duration-300 group hover:-translate-y-1 flex flex-col"
               >
-                {/* Card image if available */}
                 {cardImageMap[item.id] && (
                   <div className="relative h-36 w-full overflow-hidden">
                     <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-105">
@@ -118,7 +149,7 @@ export default function Services() {
                         alt={item.title}
                         fill
                         className="object-cover object-center"
-                        sizes="(max-width: 640px) 100vw, 25vw"
+                        sizes="(max-width: 640px) 100vw, 33vw"
                       />
                       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-darker" />
                     </div>
@@ -126,29 +157,20 @@ export default function Services() {
                 )}
 
                 <div className="p-6 flex flex-col flex-1">
-                {isOrbis && item.badge && (
-                  <div className="absolute top-4 right-4 text-xs font-semibold px-2.5 py-1 rounded-full bg-purple-500/15 text-purple-300 border border-purple-500/20">
-                    {item.badge}
+                  <div className="inline-flex p-2.5 rounded-xl mb-4 bg-white/[0.05] text-white/50 group-hover:bg-brand-blue/10 group-hover:text-brand-blue transition-colors duration-300 w-fit">
+                    <Icon size={22} strokeWidth={1.5} />
                   </div>
-                )}
-
-                <div className="inline-flex p-2.5 rounded-xl mb-4 bg-white/[0.05] text-white/50 group-hover:bg-brand-blue/10 group-hover:text-brand-blue transition-colors duration-300 w-fit">
-                  <Icon size={22} strokeWidth={1.5} />
-                </div>
-
-                <h3 className="font-display text-base font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-white/45 text-xs leading-relaxed mb-4 flex-1">{item.description}</p>
-
-                <ul className="space-y-1.5 mt-auto">
-                  {item.features.slice(0, 3).map((f) => (
-                    <li key={f} className="flex items-center gap-2 text-xs text-white/50">
-                      <Check size={11} className="text-brand-steel/60 shrink-0" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="absolute bottom-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-brand-blue/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <h3 className="font-display text-base font-bold text-white mb-2">{item.title}</h3>
+                  <p className="text-white/45 text-xs leading-relaxed mb-4 flex-1">{item.description}</p>
+                  <ul className="space-y-1.5 mt-auto">
+                    {item.features.slice(0, 3).map((f) => (
+                      <li key={f} className="flex items-center gap-2 text-xs text-white/50">
+                        <Check size={11} className="text-brand-steel/60 shrink-0" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="absolute bottom-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-brand-blue/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               </div>
             );
