@@ -25,11 +25,11 @@
         "features": ["Resolución HD & 4K", "Monitoreo remoto por app", "Visión nocturna en color", "Almacenamiento local y nube", "Residencial & comercial", "Sistemas exteriores resistentes"]
       },
       {
-        "id": "cabling",
-        "title": "Cableado Estructurado",
-        "badge": "",
-        "description": "Cableado de red y baja tensión limpio y profesional para hogares y empresas. Desde Cat6 hasta fibra óptica y coaxial — instalado correctamente desde el principio.",
-        "features": ["Cat5e / Cat6 / Cat6A", "Fibra óptica", "Coaxial & HDMI", "Configuración de patch panel", "Instalación embutida", "Residencial & comercial"]
+        "id": "orbis",
+        "title": "Orbis para Edificios",
+        "badge": "Suscripción",
+        "description": "Orbis es una plataforma avanzada de control de acceso y gestión de visitantes para edificios comerciales. Entregada como suscripción gestionada — hardware, software y soporte incluidos.",
+        "features": ["Modelo de suscripción", "Plataforma en la nube", "Gestión de visitantes", "Registros y análisis", "Soporte 24/7"]
       },
       {
         "id": "intercom",
@@ -39,11 +39,11 @@
         "features": ["Sistemas basados en IP", "Control por app", "Integración con videoportero", "Soporte multi-unidad", "Escalable"]
       },
       {
-        "id": "orbis",
-        "title": "Orbis para Edificios",
-        "badge": "Suscripción",
-        "description": "Orbis es una plataforma avanzada de control de acceso y gestión de visitantes para edificios comerciales. Entregada como suscripción gestionada — hardware, software y soporte incluidos.",
-        "features": ["Modelo de suscripción", "Plataforma en la nube", "Gestión de visitantes", "Registros y análisis", "Soporte 24/7"]
+        "id": "cabling",
+        "title": "Cableado Estructurado",
+        "badge": "",
+        "description": "Cableado de red y baja tensión limpio y profesional para hogares y empresas. Desde Cat6 hasta fibra óptica y coaxial — instalado correctamente desde el principio.",
+        "features": ["Cat5e / Cat6 / Cat6A", "Fibra óptica", "Coaxial & HDMI", "Configuración de patch panel", "Instalación embutida", "Residencial & comercial"]
       },
       {
         "id": "it",

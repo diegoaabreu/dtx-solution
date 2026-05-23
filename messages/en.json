@@ -25,11 +25,11 @@
         "features": ["HD & 4K resolution", "Remote monitoring via app", "Color night vision", "Cloud & local storage", "Residential & commercial", "Weatherproof outdoor systems"]
       },
       {
-        "id": "cabling",
-        "title": "Structured Cabling",
-        "badge": "",
-        "description": "Clean, professional network and low-voltage cabling for homes and businesses. From Cat6 data runs to coaxial and fiber — installed right the first time.",
-        "features": ["Cat5e / Cat6 / Cat6A", "Fiber optic", "Coaxial & HDMI", "Patch panel setup", "Clean in-wall routing", "Residential & commercial"]
+        "id": "orbis",
+        "title": "Orbis for Buildings",
+        "badge": "Subscription",
+        "description": "Orbis is a cutting-edge access control and visitor management platform for commercial buildings. Delivered as a managed subscription — hardware, software, and ongoing support included.",
+        "features": ["Managed subscription model", "Cloud-based platform", "Visitor management", "Access logs & analytics", "24/7 support"]
       },
       {
         "id": "intercom",
@@ -39,11 +39,11 @@
         "features": ["IP-based systems", "Mobile app control", "Video doorbell integration", "Multi-unit support", "Scalable for any size"]
       },
       {
-        "id": "orbis",
-        "title": "Orbis for Buildings",
-        "badge": "Subscription",
-        "description": "Orbis is a cutting-edge access control and visitor management platform for commercial buildings. Delivered as a managed subscription — hardware, software, and ongoing support included.",
-        "features": ["Managed subscription model", "Cloud-based platform", "Visitor management", "Access logs & analytics", "24/7 support"]
+        "id": "cabling",
+        "title": "Structured Cabling",
+        "badge": "",
+        "description": "Clean, professional network and low-voltage cabling for homes and businesses. From Cat6 data runs to coaxial and fiber — installed right the first time.",
+        "features": ["Cat5e / Cat6 / Cat6A", "Fiber optic", "Coaxial & HDMI", "Patch panel setup", "Clean in-wall routing", "Residential & commercial"]
       },
       {
         "id": "it",

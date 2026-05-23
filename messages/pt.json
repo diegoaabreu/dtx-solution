@@ -25,11 +25,11 @@
         "features": ["Resolução HD & 4K", "Monitoramento remoto via app", "Visão noturna colorida", "Armazenamento local e nuvem", "Residencial & comercial", "Sistemas externos à prova d'água"]
       },
       {
-        "id": "cabling",
-        "title": "Cabeamento Estruturado",
-        "badge": "",
-        "description": "Cabeamento de rede e baixa tensão limpo e profissional para residências e empresas. De cabos Cat6 a fibra ótica e coaxial — instalado corretamente desde o início.",
-        "features": ["Cat5e / Cat6 / Cat6A", "Fibra ótica", "Coaxial & HDMI", "Configuração de patch panel", "Passagem interna de parede", "Residencial & comercial"]
+        "id": "orbis",
+        "title": "Orbis para Edifícios",
+        "badge": "Assinatura",
+        "description": "O Orbis é uma plataforma avançada de controle de acesso e gestão de visitantes para edifícios comerciais. Entregue como assinatura gerenciada — hardware, software e suporte contínuo incluídos.",
+        "features": ["Modelo de assinatura", "Plataforma em nuvem", "Gestão de visitantes", "Registros e análises", "Suporte 24/7"]
       },
       {
         "id": "intercom",
@@ -39,11 +39,11 @@
         "features": ["Sistemas baseados em IP", "Controle por app", "Integração com videoporteiro", "Suporte multi-unidade", "Escalável para qualquer tamanho"]
       },
       {
-        "id": "orbis",
-        "title": "Orbis para Edifícios",
-        "badge": "Assinatura",
-        "description": "O Orbis é uma plataforma avançada de controle de acesso e gestão de visitantes para edifícios comerciais. Entregue como assinatura gerenciada — hardware, software e suporte contínuo incluídos.",
-        "features": ["Modelo de assinatura", "Plataforma em nuvem", "Gestão de visitantes", "Registros e análises", "Suporte 24/7"]
+        "id": "cabling",
+        "title": "Cabeamento Estruturado",
+        "badge": "",
+        "description": "Cabeamento de rede e baixa tensão limpo e profissional para residências e empresas. De cabos Cat6 a fibra ótica e coaxial — instalado corretamente desde o início.",
+        "features": ["Cat5e / Cat6 / Cat6A", "Fibra ótica", "Coaxial & HDMI", "Configuração de patch panel", "Passagem interna de parede", "Residencial & comercial"]
       },
       {
         "id": "it",
