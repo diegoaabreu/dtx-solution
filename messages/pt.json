@@ -43,14 +43,14 @@
         "title": "Cabeamento Estruturado",
         "badge": "",
         "description": "Cabeamento de rede e baixa tensão limpo e profissional para residências e empresas. De cabos Cat6 a fibra ótica e coaxial — instalado corretamente desde o início.",
-        "features": ["Cat5e / Cat6 / Cat6A", "Fibra ótica", "Coaxial & HDMI", "Configuração de patch panel", "Passagem interna de parede", "Residencial & comercial"]
+        "features": ["Cat5e / Cat6 / Cat6A", "Fibra ótica", "Configuração de patch panel", "Passagem interna de parede", "Residencial & comercial"]
       },
       {
         "id": "it",
         "title": "Serviços de TI Microsoft",
         "badge": "",
-        "description": "Serviços de TI de nível enterprise com expertise profunda em Microsoft. De Active Directory e Windows Server a hardening de segurança e gestão de endpoints.",
-        "features": ["Active Directory", "Windows Server", "Hardening de segurança", "Gestão de endpoints", "Certificação MCSE"]
+        "description": "Serviços de TI de nível enterprise com expertise profunda em Microsoft. De administração de Windows Server a hardening de segurança e gestão de endpoints.",
+        "features": ["Active Directory", "Windows Server", "Azure", "Políticas de segurança", "Gestão de endpoints", "Certificação MCSE"]
       }
     ]
   },

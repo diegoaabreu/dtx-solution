@@ -43,14 +43,14 @@
         "title": "Structured Cabling",
         "badge": "",
         "description": "Clean, professional network and low-voltage cabling for homes and businesses. From Cat6 data runs to coaxial and fiber — installed right the first time.",
-        "features": ["Cat5e / Cat6 / Cat6A", "Fiber optic", "Coaxial & HDMI", "Patch panel setup", "Clean in-wall routing", "Residential & commercial"]
+        "features": ["Cat5e / Cat6 / Cat6A", "Fiber optic", "Patch panel setup", "Clean in-wall routing", "Residential & commercial"]
       },
       {
         "id": "it",
         "title": "Microsoft IT Services",
         "badge": "",
-        "description": "Enterprise-grade IT services with deep Microsoft expertise. From Active Directory and Windows Server to endpoint security hardening and fleet management.",
-        "features": ["Active Directory", "Windows Server", "Security hardening", "Endpoint management", "MCSE-certified"]
+        "description": "Enterprise-grade IT services with deep Microsoft expertise. From Windows Server administration to endpoint security hardening and fleet management.",
+        "features": ["Active Directory", "Windows Server", "Azure", "Security policies", "Endpoint management", "MCSE-certified"]
       }
     ]
   },
