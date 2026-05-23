@@ -56,8 +56,8 @@
         "id": "it",
         "title": "Microsoft IT Services",
         "badge": "",
-        "description": "Enterprise-grade IT services with deep Microsoft expertise. From Windows Server administration to Endpoint security policies and fleet management.",
-        "features": ["Windows Server Infrastructure", "Active Directory", "Azure Cloud", "Security policies", "Endpoint management", "MCSE-certified", "Microsoft Configuration Manager"]
+        "description": "Enterprise-grade IT services with deep Microsoft expertise. From Windows Server administration to Endpoint security baselines and fleet management.",
+        "features": ["Windows Server Infrastructure", "Active Directory / Azure Cloud", "Configuration Manager", "Security baselines", "Endpoint management", "MCSE-certified"]
       }
     ]
   },
