@@ -59,10 +59,11 @@ export default function Services() {
             className="rounded-2xl overflow-hidden border border-brand-blue/25 bg-gradient-to-br from-brand-navy via-[#0f1f40] to-brand-dark relative group hover:border-brand-blue/40 transition-all duration-300 flex flex-col"
             style={{ boxShadow: "0 0 60px rgba(14,168,225,0.07)" }}
           >
-            <div className="absolute inset-0 opacity-[0.18]">
+            <div className="absolute inset-0 opacity-[0.22] group-hover:opacity-[0.45] transition-opacity duration-500">
               <Image src="/Assets/Surveillance.jpg" alt="" fill className="object-cover object-center" sizes="50vw" />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/70 to-brand-dark/95" />
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-brand-navy/20" />
+            <div className="absolute inset-0 bg-gradient-to-l from-brand-dark/80 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
 
             <div className="relative z-10 p-8 lg:p-10 flex flex-col flex-1">
               <div className="flex items-center gap-3 mb-5">
@@ -98,10 +99,11 @@ export default function Services() {
             className="rounded-2xl overflow-hidden border border-purple-500/20 bg-gradient-to-br from-[#1a1030] via-[#140d28] to-brand-dark relative group hover:border-purple-500/35 transition-all duration-300 flex flex-col"
             style={{ boxShadow: "0 0 60px rgba(168,85,247,0.05)" }}
           >
-            <div className="absolute inset-0 opacity-[0.14]">
+            <div className="absolute inset-0 opacity-[0.20] group-hover:opacity-[0.42] transition-opacity duration-500">
               <Image src="/Assets/tv_orbis.png" alt="" fill className="object-cover object-center" sizes="50vw" />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-[#1a1030]/80 to-brand-dark/95" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1a1030] via-[#1a1030]/90 to-[#1a1030]/20" />
+            <div className="absolute inset-0 bg-gradient-to-l from-brand-dark/80 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
 
             <div className="relative z-10 p-8 lg:p-10 flex flex-col flex-1">
               <div className="flex items-center gap-3 mb-5">
