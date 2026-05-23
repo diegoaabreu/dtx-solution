@@ -29,7 +29,7 @@
         "title": "Orbis for Buildings",
         "badge": "Subscription",
         "description": "Orbis is a digital signage platform that turns any screen into a smart virtual directory for your building. DTX Solution installs and manages the lobby displays — tenants and visitors always see up-to-date building information.",
-        "features": ["Virtual building directory", "Lobby screen installation", "Fully customizable content & layout", "Web-managed content", "Subscription model", "Custom branding"]
+        "features": ["Virtual building directory", "Lobby screen installation", "Dynamic content and Layout", "Web-managed content", "Subscription model", "Custom branding"]
       },
       {
         "id": "intercom",
