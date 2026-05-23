@@ -45,10 +45,7 @@ export default function Contact() {
           <div className="lg:col-span-2 flex flex-col gap-6">
             <div className="bg-brand-darker border border-white/[0.07] rounded-2xl p-6">
               <h3 className="font-display font-semibold text-white mb-4">Contact Info</h3>
-              <p className="text-white/50 text-sm mb-4 leading-relaxed">
-                Email: diego@dtxsolution.com · Phone: (857) 829-0077 · Reading, MA — Greater Boston Area
-              </p>
-              <address className="not-italic space-y-4">
+<address className="not-italic space-y-4">
                 <a
                   href="mailto:diego@dtxsolution.com"
                   className="flex items-center gap-3 text-white/50 hover:text-brand-blue transition-colors text-sm group"
