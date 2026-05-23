@@ -7,10 +7,10 @@ import { useTranslations, useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { Menu, X, Globe } from "lucide-react";
 
-const localeNames: Record<string, string> = {
-  en: "EN",
-  pt: "PT",
-  es: "ES",
+const localeNames: Record<string, { flag: string; label: string }> = {
+  en: { flag: "🇺🇸", label: "EN" },
+  pt: { flag: "🇧🇷", label: "PT" },
+  es: { flag: "🇪🇸", label: "ES" },
 };
 
 export default function Navbar() {
@@ -91,8 +91,8 @@ export default function Navbar() {
               onClick={() => setLangOpen(!langOpen)}
               className="flex items-center gap-1.5 text-sm text-white/60 hover:text-white transition-colors px-2 py-1.5 rounded-md hover:bg-white/5"
             >
-              <Globe size={15} />
-              <span className="font-medium">{localeNames[locale]}</span>
+              <span className="text-base leading-none">{localeNames[locale].flag}</span>
+              <span className="font-medium">{localeNames[locale].label}</span>
             </button>
             {langOpen && (
               <div className="absolute right-0 top-full mt-2 bg-brand-darker border border-white/10 rounded-lg shadow-xl overflow-hidden">
@@ -100,10 +100,11 @@ export default function Navbar() {
                   <button
                     key={l}
                     onClick={() => switchLocale(l)}
-                    className={`w-full px-4 py-2.5 text-sm text-left hover:bg-white/5 transition-colors ${
+                    className={`w-full px-4 py-2.5 text-sm text-left hover:bg-white/5 transition-colors flex items-center gap-2.5 ${
                       l === locale ? "text-brand-blue font-semibold" : "text-white/70"
                     }`}
                   >
+                    <span className="text-base leading-none">{localeNames[l].flag}</span>
                     {l === "en" ? "English" : l === "pt" ? "Português" : "Español"}
                   </button>
                 ))}
