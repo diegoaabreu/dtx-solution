@@ -29,7 +29,7 @@
         "title": "Orbis para Edificios",
         "badge": "Suscripción",
         "description": "Orbis es una plataforma de señalización digital que convierte cualquier pantalla en un directorio virtual inteligente para su edificio. DTX Solution instala y gestiona las pantallas del lobby — inquilinos y visitantes siempre ven información actualizada del edificio.",
-        "features": ["Directorio virtual del edificio", "Instalación de pantalla en lobby", "Modo kiosk en navegador", "Contenido gestionado por web", "Modelo de suscripción", "Marca personalizada"]
+        "features": ["Directorio virtual del edificio", "Instalación de pantalla en lobby", "Contenido y diseño totalmente personalizables", "Contenido gestionado por web", "Modelo de suscripción", "Marca personalizada"]
       },
       {
         "id": "intercom",
