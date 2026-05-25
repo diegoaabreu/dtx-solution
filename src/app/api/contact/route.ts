@@ -68,7 +68,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error("Contact route error:", err);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error("Contact route error:", msg);
+    return NextResponse.json({ error: "Internal server error", detail: msg }, { status: 500 });
   }
 }
