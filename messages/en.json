@@ -14,6 +14,8 @@
     "ctaSecondary": "Our Services"
   },
   "services": {
+    "orbisLearnMore": "Learn More",
+    "orbisModalTitle": "Orbis — Portfolio",
     "title": "What We Do",
     "subtitle": "End-to-end solutions for residential and commercial clients across Greater Boston.",
     "items": [

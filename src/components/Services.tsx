@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Camera, PhoneCall, Building2, Server, Network, Monitor, Check, ArrowRight } from "lucide-react";
+import { Camera, PhoneCall, Building2, Server, Network, Monitor, Check, ArrowRight, X } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   cameras: Camera,
@@ -31,6 +32,7 @@ type ServiceItem = {
 export default function Services() {
   const t = useTranslations("services");
   const items = t.raw("items") as ServiceItem[];
+  const [orbisOpen, setOrbisOpen] = useState(false);
 
   const cameras = items.find((i) => i.id === "cameras")!;
   const orbis = items.find((i) => i.id === "orbis")!;
@@ -124,13 +126,21 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <a
-                href="#contact"
-                className="mt-auto inline-flex items-center gap-2 bg-purple-600/80 hover:bg-purple-600 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-purple-500/20 text-sm group/btn w-fit"
-              >
-                Get a Free Quote
-                <ArrowRight size={15} className="transition-transform duration-200 group-hover/btn:translate-x-1" />
-              </a>
+              <div className="mt-auto flex flex-wrap gap-3">
+                <button
+                  onClick={() => setOrbisOpen(true)}
+                  className="inline-flex items-center gap-2 bg-purple-600/80 hover:bg-purple-600 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-purple-500/20 text-sm"
+                >
+                  {t("orbisLearnMore")}
+                  <ArrowRight size={15} />
+                </button>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-2 bg-white/[0.07] hover:bg-white/[0.12] text-white/70 hover:text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 text-sm"
+                >
+                  Get a Free Quote
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -181,6 +191,32 @@ export default function Services() {
           })}
         </div>
       </div>
+      {orbisOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm p-4"
+          onClick={() => setOrbisOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-5xl h-[85vh] bg-brand-darker rounded-2xl overflow-hidden border border-purple-500/20 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/[0.07] bg-brand-darker">
+              <span className="text-sm font-semibold text-white/70">{t("orbisModalTitle")}</span>
+              <button
+                onClick={() => setOrbisOpen(false)}
+                className="p-1.5 rounded-lg text-white/50 hover:text-white hover:bg-white/10 transition-all duration-200"
+              >
+                <X size={18} />
+              </button>
+            </div>
+            <iframe
+              src="https://orbis.dtxsolution.com/portfolio.php"
+              className="w-full h-[calc(100%-49px)]"
+              title="Orbis Portfolio"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

@@ -14,6 +14,8 @@
     "ctaSecondary": "Nossos Serviços"
   },
   "services": {
+    "orbisLearnMore": "Saiba Mais",
+    "orbisModalTitle": "Orbis — Portfólio",
     "title": "O Que Fazemos",
     "subtitle": "Soluções completas para clientes residenciais e comerciais em Greater Boston.",
     "items": [
