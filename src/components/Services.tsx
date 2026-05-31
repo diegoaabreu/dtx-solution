@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Camera, PhoneCall, Building2, Server, Network, Monitor, Check, ArrowRight, X } from "lucide-react";
@@ -33,6 +33,17 @@ export default function Services() {
   const t = useTranslations("services");
   const items = t.raw("items") as ServiceItem[];
   const [orbisOpen, setOrbisOpen] = useState(false);
+
+  useEffect(() => {
+    const handler = (e: MessageEvent) => {
+      if (e.data === "go-to-contact") {
+        setOrbisOpen(false);
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+    window.addEventListener("message", handler);
+    return () => window.removeEventListener("message", handler);
+  }, []);
 
   const cameras = items.find((i) => i.id === "cameras")!;
   const orbis = items.find((i) => i.id === "orbis")!;
