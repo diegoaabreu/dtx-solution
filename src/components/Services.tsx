@@ -202,21 +202,12 @@ export default function Services() {
           >
             <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/[0.07] bg-brand-darker">
               <span className="text-sm font-semibold text-white/70">{t("orbisModalTitle")}</span>
-              <div className="flex items-center gap-3">
-                <a
-                  href="#contact"
-                  onClick={() => setOrbisOpen(false)}
-                  className="text-xs font-semibold text-purple-300 hover:text-white transition-colors px-3 py-1.5 rounded-lg hover:bg-white/10"
-                >
-                  Get in Touch
-                </a>
-                <button
-                  onClick={() => setOrbisOpen(false)}
-                  className="p-1.5 rounded-lg text-white/50 hover:text-white hover:bg-white/10 transition-all duration-200"
-                >
-                  <X size={18} />
-                </button>
-              </div>
+              <button
+                onClick={() => setOrbisOpen(false)}
+                className="p-1.5 rounded-lg text-white/50 hover:text-white hover:bg-white/10 transition-all duration-200"
+              >
+                <X size={18} />
+              </button>
             </div>
             <iframe
               src="https://orbis.dtxsolution.com/portfolio.php"
