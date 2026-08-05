@@ -239,7 +239,7 @@ git push             # Vercel detecta e faz deploy em ~1 min
 ## Contatos e Redes
 
 - **Email:** diego@dtxsolution.com
-- **Telefone:** (857) 829-0077
+- **Telefone:** (857) 999-9922
 - **Localização:** Reading, MA — Greater Boston Area
 - **Instagram:** https://www.instagram.com/dtx.solution/
 - **Facebook:** https://www.facebook.com/dtx.solution85

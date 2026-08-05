@@ -63,11 +63,11 @@ export default function Contact() {
                   diego@dtxsolution.com
                 </a>
                 <a
-                  href="tel:+18578290077"
+                  href="tel:+18579999922"
                   className="flex items-center gap-3 text-white/50 hover:text-brand-blue transition-colors text-sm group"
                 >
                   <Phone size={16} className="shrink-0" />
-                  (857) 829-0077
+                  (857) 999-9922
                 </a>
                 <p className="flex items-center gap-3 text-white/50 text-sm">
                   <span className="shrink-0 w-4 text-center">📍</span>
