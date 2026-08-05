@@ -40,7 +40,7 @@ export default function Trust() {
             {/* Stats */}
             <div className="mt-10 flex flex-wrap gap-8 sm:gap-10">
               <div>
-                <div className="font-display text-3xl font-bold text-brand-blue">10+</div>
+                <div className="font-display text-3xl font-bold text-brand-blue">15+</div>
                 <div className="text-white/40 text-sm mt-1">Years Experience</div>
               </div>
               <div>
