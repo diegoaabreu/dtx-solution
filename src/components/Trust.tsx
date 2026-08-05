@@ -38,10 +38,14 @@ export default function Trust() {
             <p className="text-white/50 text-lg leading-relaxed">{t("subtitle")}</p>
 
             {/* Stats */}
-            <div className="mt-10 flex gap-10">
+            <div className="mt-10 flex flex-wrap gap-8 sm:gap-10">
               <div>
                 <div className="font-display text-3xl font-bold text-brand-blue">10+</div>
                 <div className="text-white/40 text-sm mt-1">Years Experience</div>
+              </div>
+              <div>
+                <div className="font-display text-3xl font-bold text-brand-blue">1000+</div>
+                <div className="text-white/40 text-sm mt-1">Cameras Installed</div>
               </div>
               <div>
                 <div className="font-display text-3xl font-bold text-brand-blue">50k+</div>
