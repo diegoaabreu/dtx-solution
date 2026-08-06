@@ -85,6 +85,12 @@
       }
     ]
   },
+  "partners": {
+    "clientsTitle": "Clients & Partners",
+    "clientsSubtitle": "Trusted by property management companies and organizations across Greater Boston.",
+    "certsTitle": "Certifications",
+    "certsSubtitle": "Enterprise-level credentials backing every project we deliver."
+  },
   "contact": {
     "title": "Get in Touch",
     "subtitle": "Ready to secure your property or upgrade your infrastructure? Let's talk.",

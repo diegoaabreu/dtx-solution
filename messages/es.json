@@ -85,6 +85,12 @@
       }
     ]
   },
+  "partners": {
+    "clientsTitle": "Clientes y Socios",
+    "clientsSubtitle": "La confianza de empresas de administración de propiedades y organizaciones en toda Greater Boston.",
+    "certsTitle": "Certificaciones",
+    "certsSubtitle": "Credenciales de nivel empresarial detrás de cada proyecto que entregamos."
+  },
   "contact": {
     "title": "Contáctenos",
     "subtitle": "¿Listo para proteger su propiedad o mejorar su infraestructura? Hablemos.",
