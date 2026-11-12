@@ -17,6 +17,7 @@ type Town = { name: string; x: number; y: number; side?: "left" | "right" };
 
 const towns: Town[] = [
   { name: "Lowell", x: 660, y: 165 },
+  { name: "Littleton", x: 400, y: 190 },
   { name: "Lawrence", x: 955, y: 80 },
   { name: "Concord", x: 600, y: 385 },
   { name: "Lexington", x: 820, y: 405 },
@@ -29,6 +30,7 @@ const towns: Town[] = [
   { name: "Norwood", x: 880, y: 725 },
   { name: "Quincy", x: 1215, y: 655 },
   { name: "Franklin", x: 505, y: 838 },
+  { name: "Mansfield", x: 802, y: 922 },
   { name: "Brockton", x: 1200, y: 860 },
 ];
 
