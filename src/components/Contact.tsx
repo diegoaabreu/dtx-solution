@@ -35,45 +35,45 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" aria-labelledby="contact-title" className="py-20 lg:py-28 bg-brand-dark border-t border-white/[0.06]">
+    <section id="contact" aria-labelledby="contact-title" className="theme-light bg-canvas py-20 lg:py-28 border-t border-line/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader id="contact-title" eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-12">
           {/* Contact info */}
           <div className="lg:col-span-2 flex flex-col gap-6">
-            <div className="bg-brand-panel ring-1 ring-white/10 rounded-xl p-6">
-              <h3 className="font-display font-semibold text-white mb-4">{t("infoTitle")}</h3>
+            <div className="bg-surface ring-1 ring-line/10 shadow-sm shadow-brand-navy/5 rounded-xl p-6">
+              <h3 className="font-display font-semibold text-ink mb-4">{t("infoTitle")}</h3>
 <address className="not-italic space-y-4">
                 <a
                   href="mailto:diego@dtxsolution.com"
-                  className="flex items-center gap-3 text-white/75 hover:text-brand-blue transition-colors text-sm group"
+                  className="flex items-center gap-3 text-ink/80 hover:text-accent transition-colors text-sm group"
                 >
-                  <Mail size={16} className="shrink-0 group-hover:text-brand-blue" />
+                  <Mail size={16} className="shrink-0 group-hover:text-accent" />
                   diego@dtxsolution.com
                 </a>
                 <a
                   href="tel:+18579999922"
-                  className="flex items-center gap-3 text-white/75 hover:text-brand-blue transition-colors text-sm group"
+                  className="flex items-center gap-3 text-ink/80 hover:text-accent transition-colors text-sm group"
                 >
                   <Phone size={16} className="shrink-0" />
                   (857) 999-9922
                 </a>
-                <p className="flex items-center gap-3 text-white/75 text-sm">
+                <p className="flex items-center gap-3 text-ink/80 text-sm">
                   <MapPin size={16} className="shrink-0" aria-hidden="true" />
                   Reading, MA — Greater Boston Area
                 </p>
               </address>
 
-              <div className="mt-6 pt-6 border-t border-white/10">
-                <p className="text-white/60 text-xs mb-3">{t("follow")}</p>
+              <div className="mt-6 pt-6 border-t border-line/10">
+                <p className="text-ink/65 text-xs mb-3">{t("follow")}</p>
                 <div className="flex gap-3">
                   <a
                     href="https://www.instagram.com/dtx.solution/"
                     aria-label="Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-lg bg-white/[0.05] text-white/70 hover:bg-brand-blue/15 hover:text-brand-blue transition-all duration-200"
+                    className="p-2.5 rounded-lg bg-line/[0.06] text-ink/75 hover:bg-brand-blue/15 hover:text-accent transition-all duration-200"
                   >
                     <Instagram size={16} />
                   </a>
@@ -82,7 +82,7 @@ export default function Contact() {
                     aria-label="Facebook"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-lg bg-white/[0.05] text-white/70 hover:bg-brand-blue/15 hover:text-brand-blue transition-all duration-200"
+                    className="p-2.5 rounded-lg bg-line/[0.06] text-ink/75 hover:bg-brand-blue/15 hover:text-accent transition-all duration-200"
                   >
                     <Facebook size={16} />
                   </a>
@@ -102,11 +102,11 @@ export default function Contact() {
           <div className="lg:col-span-3">
             <form
               onSubmit={handleSubmit}
-              className="bg-brand-panel ring-1 ring-white/10 rounded-xl p-6 sm:p-8 space-y-5"
+              className="bg-surface ring-1 ring-line/10 shadow-sm shadow-brand-navy/5 rounded-xl p-6 sm:p-8 space-y-5"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label htmlFor="contact-name" className="block text-xs text-white/70 font-medium mb-2">{t("name")}</label>
+                  <label htmlFor="contact-name" className="block text-xs text-ink/75 font-medium mb-2">{t("name")}</label>
                   <input
                     id="contact-name"
                     name="name"
@@ -115,12 +115,12 @@ export default function Contact() {
                     required
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    className="w-full bg-brand-dark/60 border border-white/15 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/35 focus:outline-none focus:border-brand-blue focus:bg-white/[0.06] transition-all"
+                    className="w-full bg-canvas border border-line/20 rounded-lg px-4 py-2.5 text-sm text-ink placeholder-ink/40 focus:outline-none focus:border-brand-blue focus:bg-surface transition-all"
                     placeholder="John Smith"
                   />
                 </div>
                 <div>
-                  <label htmlFor="contact-email" className="block text-xs text-white/70 font-medium mb-2">{t("email")}</label>
+                  <label htmlFor="contact-email" className="block text-xs text-ink/75 font-medium mb-2">{t("email")}</label>
                   <input
                     id="contact-email"
                     name="email"
@@ -129,7 +129,7 @@ export default function Contact() {
                     required
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full bg-brand-dark/60 border border-white/15 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/35 focus:outline-none focus:border-brand-blue focus:bg-white/[0.06] transition-all"
+                    className="w-full bg-canvas border border-line/20 rounded-lg px-4 py-2.5 text-sm text-ink placeholder-ink/40 focus:outline-none focus:border-brand-blue focus:bg-surface transition-all"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -137,7 +137,7 @@ export default function Contact() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label htmlFor="contact-phone" className="block text-xs text-white/70 font-medium mb-2">{t("phone")}</label>
+                  <label htmlFor="contact-phone" className="block text-xs text-ink/75 font-medium mb-2">{t("phone")}</label>
                   <input
                     id="contact-phone"
                     name="phone"
@@ -145,22 +145,22 @@ export default function Contact() {
                     type="tel"
                     value={form.phone}
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                    className="w-full bg-brand-dark/60 border border-white/15 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/35 focus:outline-none focus:border-brand-blue focus:bg-white/[0.06] transition-all"
+                    className="w-full bg-canvas border border-line/20 rounded-lg px-4 py-2.5 text-sm text-ink placeholder-ink/40 focus:outline-none focus:border-brand-blue focus:bg-surface transition-all"
                     placeholder="(617) 000-0000"
                   />
                 </div>
                 <div>
-                  <label htmlFor="contact-service" className="block text-xs text-white/70 font-medium mb-2">{t("service")}</label>
+                  <label htmlFor="contact-service" className="block text-xs text-ink/75 font-medium mb-2">{t("service")}</label>
                   <select
                     id="contact-service"
                     name="service"
                     value={form.service}
                     onChange={(e) => setForm({ ...form, service: e.target.value })}
-                    className="w-full bg-brand-dark/60 border border-white/15 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-blue focus:bg-white/[0.06] transition-all"
+                    className="w-full bg-canvas border border-line/20 rounded-lg px-4 py-2.5 text-sm text-ink focus:outline-none focus:border-brand-blue focus:bg-surface transition-all"
                   >
-                    <option value="" className="bg-brand-darker">{t("select")}</option>
+                    <option value="" className="bg-surface">{t("select")}</option>
                     {services.map((s) => (
-                      <option key={s} value={s} className="bg-brand-darker">
+                      <option key={s} value={s} className="bg-surface">
                         {s}
                       </option>
                     ))}
@@ -169,26 +169,26 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="contact-message" className="block text-xs text-white/70 font-medium mb-2">{t("message")}</label>
+                <label htmlFor="contact-message" className="block text-xs text-ink/75 font-medium mb-2">{t("message")}</label>
                 <textarea
                   id="contact-message"
                   name="message"
                   rows={4}
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="w-full bg-brand-dark/60 border border-white/15 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/35 focus:outline-none focus:border-brand-blue focus:bg-white/[0.06] transition-all resize-none"
+                  className="w-full bg-canvas border border-line/20 rounded-lg px-4 py-2.5 text-sm text-ink placeholder-ink/40 focus:outline-none focus:border-brand-blue focus:bg-surface transition-all resize-none"
                   placeholder={t("messagePlaceholder")}
                 />
               </div>
 
               {status === "error" && (
-                <p role="alert" className="bg-red-500/10 border border-red-500/30 rounded-lg px-5 py-3.5 text-red-300 text-sm">
+                <p role="alert" className="bg-red-500/10 border border-red-500/30 rounded-lg px-5 py-3.5 text-red-700 text-sm">
                   {t("error")}
                 </p>
               )}
 
               {status === "success" ? (
-                <div role="status" className="bg-green-500/10 border border-green-500/30 rounded-lg px-5 py-3.5 text-green-300 text-sm font-medium">
+                <div role="status" className="bg-green-500/10 border border-green-500/30 rounded-lg px-5 py-3.5 text-green-700 text-sm font-medium">
                   {t("success")}
                 </div>
               ) : (

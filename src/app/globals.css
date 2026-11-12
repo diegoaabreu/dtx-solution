@@ -33,6 +33,32 @@
   }
 }
 
+/* Section themes. Dark mirrors the original site; light puts the brand navy
+   (#182855, the identity's main color) back in charge as the text color. */
+@layer base {
+  :root,
+  .theme-dark {
+    --canvas: 8 13 26;      /* #080D1A brand.dark */
+    --canvas-alt: 13 21 37; /* #0D1525 brand.darker */
+    --surface: 17 27 48;    /* #111B30 brand.panel */
+    --ink: 255 255 255;
+    --line: 255 255 255;
+    --accent: 14 168 225;   /* #0EA8E1 brand.blue */
+  }
+  .theme-light {
+    --canvas: 244 247 251;  /* #F4F7FB cool off-white */
+    --canvas-alt: 255 255 255;
+    --surface: 255 255 255;
+    --ink: 24 40 85;        /* #182855 brand.navy */
+    --line: 24 40 85;
+    --accent: 8 119 163;    /* #0877A3 darker cyan, readable on white */
+  }
+  .theme-light,
+  .theme-dark {
+    color: rgb(var(--ink));
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

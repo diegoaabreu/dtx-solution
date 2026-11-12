@@ -18,6 +18,16 @@ const config: Config = {
           panel: "#111B30",   // raised surfaces (feed frame, form)
           mist: "#A9C3D6",    // light steel — Orbis accent text, secondary labels
         },
+        // Section-theme tokens: values come from .theme-light / .theme-dark (globals.css)
+        // so the same component reads correctly on either background.
+        // canvas = section background, canvas-alt = alternate section background,
+        // surface = raised card/panel, ink = text, line = borders, accent = accent text.
+        canvas: "rgb(var(--canvas) / <alpha-value>)",
+        "canvas-alt": "rgb(var(--canvas-alt) / <alpha-value>)",
+        surface: "rgb(var(--surface) / <alpha-value>)",
+        ink: "rgb(var(--ink) / <alpha-value>)",
+        line: "rgb(var(--line) / <alpha-value>)",
+        accent: "rgb(var(--accent) / <alpha-value>)",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],

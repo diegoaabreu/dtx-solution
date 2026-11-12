@@ -26,7 +26,7 @@ type Logo = { name: string; src: string; h?: string };
 
 function LogoRow({ logos, cols }: { logos: Logo[]; cols: string }) {
   return (
-    <ul className={`grid ${cols} gap-px bg-slate-200 rounded-xl overflow-hidden ring-1 ring-white/10`}>
+    <ul className={`grid ${cols} gap-px bg-line/10 rounded-xl overflow-hidden ring-1 ring-line/10`}>
       {logos.map((l) => (
         <li key={l.name} className="bg-white flex items-center justify-center px-6 py-7">
           <Image
@@ -46,14 +46,14 @@ export default function Partners() {
   const t = useTranslations("partners");
 
   return (
-    <section aria-labelledby="partners-title" className="py-20 lg:py-28 bg-brand-darker border-t border-white/[0.06]">
+    <section aria-labelledby="partners-title" className="theme-light bg-canvas-alt py-20 lg:py-28 border-t border-line/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader id="partners-title" eyebrow={t("eyebrow")} title={t("clientsTitle")} subtitle={t("clientsSubtitle")} />
 
         <div className="flex flex-col gap-10">
           <LogoRow logos={clients} cols="grid-cols-1 sm:grid-cols-3" />
           <div>
-            <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-white/60 mb-3">{t("techTitle")}</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-ink/65 mb-3">{t("techTitle")}</h3>
             <LogoRow logos={vendors} cols="grid-cols-2 sm:grid-cols-4" />
           </div>
         </div>

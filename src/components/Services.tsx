@@ -67,7 +67,7 @@ export default function Services() {
   const rest = items.filter((i) => i.id !== "cameras" && i.id !== "orbis");
 
   return (
-    <section id="services" aria-labelledby="services-title" className="py-20 lg:py-28 bg-brand-dark border-t border-white/[0.06]">
+    <section id="services" aria-labelledby="services-title" className="theme-light bg-canvas py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader id="services-title" eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
 
@@ -114,18 +114,18 @@ export default function Services() {
 
         {/* Remaining services as a spec list */}
         <div className="mt-16">
-          <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-white/55 mb-2">{t("listTitle")}</h3>
-          <ul className="border-t border-white/10">
+          <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-ink/65 mb-2">{t("listTitle")}</h3>
+          <ul className="border-t border-line/15">
             {rest.map((item) => {
               const Icon = iconMap[item.id] || Server;
               return (
                 <li
                   key={item.id}
-                  className="group grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 py-7 border-b border-white/10"
+                  className="group grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 py-7 border-b border-line/15"
                 >
                   {/* Thumbnail */}
                   <div className="md:col-span-4 lg:col-span-3 min-w-0">
-                    <div className="relative aspect-[16/9] md:aspect-[4/3] lg:aspect-[16/10] w-full max-w-full overflow-hidden rounded-lg ring-1 ring-white/10 bg-brand-navy">
+                    <div className="relative aspect-[16/9] md:aspect-[4/3] lg:aspect-[16/10] w-full max-w-full overflow-hidden rounded-lg ring-1 ring-line/10 bg-brand-navy shadow-sm shadow-brand-navy/10">
                       {rowImageMap[item.id] ? (
                         <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.04]">
                           <Image
@@ -159,17 +159,17 @@ export default function Services() {
                   {/* Title + description */}
                   <div className="md:col-span-8 lg:col-span-5 min-w-0">
                     <div className="flex items-center gap-3 mb-2">
-                      <Icon size={20} strokeWidth={1.6} className="shrink-0 text-brand-blue" aria-hidden="true" />
-                      <h4 className="font-display text-lg font-bold text-white leading-snug">{item.title}</h4>
+                      <Icon size={20} strokeWidth={1.6} className="shrink-0 text-accent" aria-hidden="true" />
+                      <h4 className="font-display text-lg font-bold text-ink leading-snug">{item.title}</h4>
                     </div>
-                    <p className="text-white/70 text-[15px] leading-relaxed">{item.description}</p>
+                    <p className="text-ink/75 text-[15px] leading-relaxed">{item.description}</p>
                   </div>
 
                   <ul className="md:col-start-5 md:col-span-8 lg:col-start-auto lg:col-span-4 flex flex-wrap gap-1.5 content-start min-w-0">
                     {item.features.map((f) => (
                       <li
                         key={f}
-                        className="font-mono text-[11px] tracking-wide text-white/75 border border-white/10 rounded px-2 py-1"
+                        className="font-mono text-[11px] tracking-wide text-ink/80 bg-surface border border-line/15 rounded px-2 py-1"
                       >
                         {f}
                       </li>
@@ -237,7 +237,7 @@ function FeaturedCard({
 
   return (
     <article
-      className={`relative rounded-xl overflow-hidden flex flex-col ring-1 ${
+      className={`relative rounded-xl overflow-hidden flex flex-col ring-1 shadow-xl shadow-brand-navy/20 ${
         isBlue ? "ring-brand-blue/30" : "ring-brand-mist/20"
       }`}
       style={{ backgroundColor: base }}

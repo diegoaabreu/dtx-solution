@@ -17,7 +17,7 @@ export default function Trust() {
   const regions = t.raw("regions") as string[];
 
   return (
-    <section id="about" aria-labelledby="about-title" className="py-20 lg:py-28 bg-brand-dark border-t border-white/[0.06]">
+    <section id="about" aria-labelledby="about-title" className="theme-dark py-20 lg:py-28 bg-brand-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader id="about-title" eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
 

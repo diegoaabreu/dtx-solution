@@ -117,6 +117,21 @@ brand.mist    = "#A9C3D6"   // Aço claro — destaque do Orbis (substitui o rox
 .text-balance   /* text-wrap: balance */
 ```
 
+### Temas de seção (site misto claro/escuro)
+
+Cada `<section>` declara `theme-light` ou `theme-dark`; os tokens abaixo mudam de valor conforme o tema (definidos em `globals.css`, expostos no Tailwind):
+
+| Token | Escuro | Claro |
+|-------|--------|-------|
+| `bg-canvas` | `#080D1A` | `#F4F7FB` |
+| `bg-canvas-alt` | `#0D1525` | `#FFFFFF` |
+| `bg-surface` | `#111B30` | `#FFFFFF` |
+| `text-ink` / `border-line` | branco | navy `#182855` |
+| `text-accent` | `#0EA8E1` | `#0877A3` (cyan escurecido p/ contraste) |
+
+Ordem atual: Hero **escuro** → Services **claro** → Process **claro (alt)** → Trust/mapa **escuro** → Partners **claro (alt)** → Contact **claro** → Footer **escuro**. Navbar sempre escura.
+Componentes novos devem usar `text-ink`, `bg-surface`, `border-line/…` em vez de `text-white`/`bg-brand-*`, exceto dentro de elementos que são sempre escuros (cards featured, caixa navy de orçamento, HUD).
+
 ### Padrões de opacidade de texto
 
 - `text-white` — títulos principais
