@@ -155,7 +155,7 @@ nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], st
 3. **Structured Cabling** (id: `cabling`) — miniatura `cabling.jpg`
 4. **Intercom Systems** (id: `intercom`) — miniatura `intercom-ip.jpg` (gerada por IA)
 5. **IP Telephony** (id: `voip`) — miniatura `voip.jpg` (gerada por IA, telefone Yealink; enquadramento `object-[80%_center]`). Marcas de telefone que a DTX trabalha: Yealink e Grandstream
-6. **Microsoft IT Services** (id: `it`) — miniatura `microsoft-it.jpg` (IA, recortada para tirar um logo DTX falso e a camisa Microsoft), inclui Microsoft 365 / Office 365
+6. **Microsoft IT Services** (id: `it`) — miniatura `microsoft-it.jpg` (IA — M365/Intune/Azure, caneca e parede com logo DTX), inclui Microsoft 365 / Office 365
 7. **Website Development** (id: `web`) — miniatura `webdev.jpg` (IA)
 
 ---
