@@ -68,7 +68,8 @@ Site institucional da **DTX Solution** — empresa de tecnologia, segurança e T
 │   │   ├── SectionHeader.tsx    # Cabeçalho de seção padrão (eyebrow mono + título + subtítulo)
 │   │   ├── Services.tsx         # 2 cards featured + lista de especificações (5 serviços)
 │   │   ├── Process.tsx          # "Como trabalhamos" — 4 etapas numeradas
-│   │   ├── Trust.tsx            # Números, diferenciais e área de atendimento (mapa SVG esquemático da I-495)
+│   │   ├── Trust.tsx            # Números, diferenciais e área de atendimento
+│   │   ├── ServiceAreaMap.tsx   # Mapa (service-area-map.jpg, gerado por IA) + nomes de cidades sobrepostos em HTML
 │   │   ├── Partners.tsx         # Logos de clientes + parceiros de tecnologia
 │   │   ├── Contact.tsx          # Formulário de contato + info
 │   │   └── Footer.tsx           # Rodapé com logo, redes sociais, links legais
@@ -137,7 +138,7 @@ Três idiomas: **EN** (padrão), **PT** (Português BR), **ES** (Espanhol)
 
 **Estrutura das mensagens:**
 ```
-nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], stats[], regions[], mapLabels), partners, contact, footer
+nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], stats[], regions[], mapAlt), partners, contact, footer
 ```
 
 ---
@@ -220,7 +221,7 @@ Cards com `overflow-hidden rounded-xl` e filhos com `scale` no hover podem "sang
 O algoritmo de leitura do browser ignora formulários e elementos com baixa densidade textual. O `<address>` com os contatos está presente no DOM mas pode não ser detectado — limitação inerente do algoritmo para páginas que não são artigos.
 
 ### Área de atendimento
-Tudo dentro da I-495, do North Shore ao South Shore. Não listar cidades individualmente (são dezenas); usar regiões + mapa esquemático.
+Tudo dentro da I-495, do North Shore ao South Shore. Não listar cidades individualmente (são dezenas); usar regiões + mapa. O mapa base (`public/Assets/service-area-map.jpg`) foi gerado por IA e não está em escala; as cidades de referência ficam em `ServiceAreaMap.tsx` (coordenadas em pixels da imagem 1536×1024).
 
 ### Clientes vs. parceiros
 Clientes: United Properties, Eastport, Housing Families. Parceiros de tecnologia: Microsoft, Cisco, Ubiquiti, UNV, LTS, Asterisk. **LTS não é cliente.**

@@ -179,13 +179,7 @@
       "South Shore"
     ],
     "areaAsk": "Não sabe se atendemos sua cidade? Pergunte.",
-    "mapLabels": {
-      "boston": "Boston",
-      "reading": "Reading",
-      "ring": "I-495",
-      "inner": "I-95 / 128",
-      "ocean": "Atlântico"
-    }
+    "mapAlt": "Mapa do leste de Massachusetts mostrando o anel da I-495 ao redor de Boston, com Reading marcada como base da DTX Solution"
   },
   "partners": {
     "clientsTitle": "Clientes",

@@ -179,13 +179,7 @@
       "South Shore"
     ],
     "areaAsk": "Not sure if you are in range? Ask us.",
-    "mapLabels": {
-      "boston": "Boston",
-      "reading": "Reading",
-      "ring": "I-495",
-      "inner": "I-95 / 128",
-      "ocean": "Atlantic"
-    }
+    "mapAlt": "Map of eastern Massachusetts showing the I-495 ring around Boston, with Reading marked as the DTX Solution base"
   },
   "partners": {
     "clientsTitle": "Clients",
