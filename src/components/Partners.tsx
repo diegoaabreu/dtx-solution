@@ -10,16 +10,21 @@ const clients = [
   { name: "Housing Families", src: "/Assets/housingfamilies.png" },
 ];
 
-const vendors = [
+const vendors: Logo[] = [
   { name: "Microsoft", src: "/Assets/microsoft.png" },
   { name: "Cisco", src: "/Assets/cisco.png" },
   { name: "Ubiquiti", src: "/Assets/ubiquiti.png" },
   { name: "Uniview (UNV)", src: "/Assets/unv.png" },
   { name: "LTS", src: "/Assets/LTS.png" },
-  { name: "Asterisk", src: "/Assets/asterisk.png" },
+  { name: "Asterisk", src: "/Assets/asterisk.png", h: "h-12" },
+  { name: "Yealink", src: "/Assets/yealink.png", h: "h-7" },
+  { name: "Grandstream", src: "/Assets/grandstream.png" },
 ];
 
-function LogoRow({ logos, cols }: { logos: { name: string; src: string }[]; cols: string }) {
+/** Optional per-logo height to balance visual weight (wordmarks vs. icon+text marks). */
+type Logo = { name: string; src: string; h?: string };
+
+function LogoRow({ logos, cols }: { logos: Logo[]; cols: string }) {
   return (
     <ul className={`grid ${cols} gap-px bg-slate-200 rounded-xl overflow-hidden ring-1 ring-white/10`}>
       {logos.map((l) => (
@@ -29,7 +34,7 @@ function LogoRow({ logos, cols }: { logos: { name: string; src: string }[]; cols
             alt={l.name}
             width={180}
             height={60}
-            className="h-10 w-auto max-w-full object-contain grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition duration-300"
+            className={`${l.h ?? "h-10"} w-auto max-w-full object-contain grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition duration-300`}
           />
         </li>
       ))}
@@ -49,7 +54,7 @@ export default function Partners() {
           <LogoRow logos={clients} cols="grid-cols-1 sm:grid-cols-3" />
           <div>
             <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-white/60 mb-3">{t("techTitle")}</h3>
-            <LogoRow logos={vendors} cols="grid-cols-2 sm:grid-cols-3 lg:grid-cols-6" />
+            <LogoRow logos={vendors} cols="grid-cols-2 sm:grid-cols-4" />
           </div>
         </div>
       </div>

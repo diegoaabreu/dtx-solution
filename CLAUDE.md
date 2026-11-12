@@ -153,7 +153,7 @@ nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], st
 
 ### Lista de especificações (miniatura + ícone + descrição + chips)
 3. **Structured Cabling** (id: `cabling`) — miniatura `cabling.jpg`
-4. **Intercom Systems** (id: `intercom`) — miniatura `Intercom.png`
+4. **Intercom Systems** (id: `intercom`) — miniatura `intercom-ip.jpg` (gerada por IA)
 5. **IP Telephony** (id: `voip`) — miniatura `voip.jpg` (gerada por IA, telefone Yealink; enquadramento `object-[80%_center]`). Marcas de telefone que a DTX trabalha: Yealink e Grandstream
 6. **Microsoft IT Services** (id: `it`) — miniatura `datacenter.png`, inclui Microsoft 365 / Office 365
 7. **Website Development** (id: `web`) — miniatura `coding.png`
@@ -224,7 +224,7 @@ O algoritmo de leitura do browser ignora formulários e elementos com baixa dens
 Tudo dentro da I-495, do North Shore ao South Shore. Não listar cidades individualmente (são dezenas); usar regiões + mapa. O mapa base (`public/Assets/service-area-map.jpg`) foi gerado por IA e não está em escala; as cidades de referência ficam em `ServiceAreaMap.tsx` (coordenadas em pixels da imagem 1536×1024).
 
 ### Clientes vs. parceiros
-Clientes: United Properties, Eastport, Housing Families. Parceiros de tecnologia: Microsoft, Cisco, Ubiquiti, UNV, LTS, Asterisk. **LTS não é cliente.**
+Clientes: United Properties, Eastport, Housing Families. Parceiros de tecnologia: Microsoft, Cisco, Ubiquiti, UNV, LTS, Asterisk, Yealink, Grandstream. **LTS não é cliente.**
 
 ### Imagens no Vercel
 Arquivos adicionados à pasta `public/Assets/` precisam ser commitados explicitamente com `git add` — o Vercel só recebe o que está no repositório.

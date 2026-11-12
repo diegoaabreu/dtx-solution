@@ -18,7 +18,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 // Row thumbnails for the spec list. A service without an entry gets a branded icon panel.
 const rowImageMap: Record<string, string> = {
-  intercom: "/Assets/Intercom.png",
+  intercom: "/Assets/intercom-ip.jpg",
   voip: "/Assets/voip.jpg",
   cabling: "/Assets/cabling.jpg",
   it: "/Assets/datacenter.png",
@@ -132,7 +132,7 @@ export default function Services() {
                             src={rowImageMap[item.id]}
                             alt=""
                             fill
-                            className={`object-cover ${item.id === "voip" ? "object-[80%_center]" : "object-center"}`}
+                            className={`object-cover ${item.id === "voip" || item.id === "intercom" ? "object-[75%_center]" : "object-center"}`}
                             sizes="(max-width: 768px) 100vw, 25vw"
                           />
                           <div aria-hidden="true" className="absolute inset-0 bg-brand-dark/15" />
