@@ -154,7 +154,7 @@ nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], st
 ### Lista de especificações (miniatura + ícone + descrição + chips)
 3. **Structured Cabling** (id: `cabling`) — miniatura `cabling.jpg`
 4. **Intercom Systems** (id: `intercom`) — miniatura `Intercom.png`
-5. **IP Telephony** (id: `voip`) — sem foto ainda (painel com ícone); adicionar em `rowImageMap` no `Services.tsx`
+5. **IP Telephony** (id: `voip`) — miniatura `voip.jpg` (gerada por IA, telefone Yealink; enquadramento `object-[80%_center]`). Marcas de telefone que a DTX trabalha: Yealink e Grandstream
 6. **Microsoft IT Services** (id: `it`) — miniatura `datacenter.png`, inclui Microsoft 365 / Office 365
 7. **Website Development** (id: `web`) — miniatura `coding.png`
 
