@@ -21,8 +21,8 @@ const rowImageMap: Record<string, string> = {
   intercom: "/Assets/intercom-ip.jpg",
   voip: "/Assets/voip.jpg",
   cabling: "/Assets/cabling.jpg",
-  it: "/Assets/datacenter.png",
-  web: "/Assets/coding.png",
+  it: "/Assets/microsoft-it.jpg",
+  web: "/Assets/webdev.jpg",
 };
 
 type ServiceItem = {
