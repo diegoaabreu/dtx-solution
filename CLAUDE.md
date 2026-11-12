@@ -65,8 +65,11 @@ Site institucional da **DTX Solution** — empresa de tecnologia, segurança e T
 │   ├── components/
 │   │   ├── Navbar.tsx           # Header fixo com scroll effect e seletor de idioma
 │   │   ├── Hero.tsx             # Seção hero com background e trust strip
-│   │   ├── Services.tsx         # Grid de serviços (2 featured + 4 grid)
-│   │   ├── Trust.tsx            # Seção "Por que DTX Solution" (4 cards)
+│   │   ├── SectionHeader.tsx    # Cabeçalho de seção padrão (eyebrow mono + título + subtítulo)
+│   │   ├── Services.tsx         # 2 cards featured + lista de especificações (5 serviços)
+│   │   ├── Process.tsx          # "Como trabalhamos" — 4 etapas numeradas
+│   │   ├── Trust.tsx            # Números, diferenciais e área de atendimento
+│   │   ├── Partners.tsx         # Logos de clientes + tecnologias instaladas
 │   │   ├── Contact.tsx          # Formulário de contato + info
 │   │   └── Footer.tsx           # Rodapé com logo, redes sociais, links legais
 │   │
@@ -95,12 +98,15 @@ brand.darker  = "#0D1525"   // Background cards/seções
 brand.navy    = "#182855"   // Azul escuro (gradientes, cards featured)
 brand.blue    = "#0EA8E1"   // Azul cyan — cor de destaque principal
 brand.steel   = "#4D7B9A"   // Azul aço — textos secundários, "Solution" no logo
+brand.panel   = "#111B30"   // Superfícies elevadas (frame da câmera, formulário)
+brand.mist    = "#A9C3D6"   // Aço claro — destaque do Orbis (substitui o roxo)
 ```
 
 ### Tipografia
 
 - **`font-sans`** → Inter (Google Fonts) — corpo de texto
 - **`font-display`** → Montserrat (Google Fonts) — títulos, headings
+- **`font-mono`** → JetBrains Mono (Google Fonts) — eyebrows, HUD da câmera, chips de especificação
 
 ### Utilitários CSS customizados
 
@@ -113,10 +119,9 @@ brand.steel   = "#4D7B9A"   // Azul aço — textos secundários, "Solution" no 
 ### Padrões de opacidade de texto
 
 - `text-white` — títulos principais
-- `text-white/70` — texto de destaque secundário
-- `text-white/55` — subheadlines
-- `text-white/45` — descrições de cards
-- `text-white/30` — labels, rodapé
+- `text-white/75`–`/80` — texto de corpo em superfícies elevadas
+- `text-white/65`–`/70` — subtítulos e descrições
+- `text-white/55`–`/60` — labels e rodapé (mínimo — abaixo disso falha contraste WCAG)
 
 ---
 
@@ -132,7 +137,7 @@ Três idiomas: **EN** (padrão), **PT** (Português BR), **ES** (Espanhol)
 
 **Estrutura das mensagens:**
 ```
-nav, hero, services.items[], trust.items[], contact, footer
+nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], stats[], towns[]), partners, contact, footer
 ```
 
 ---
@@ -141,13 +146,16 @@ nav, hero, services.items[], trust.items[], contact, footer
 
 ### Linha superior — cards featured (lado a lado, lg:grid-cols-2)
 1. **Security Cameras** (id: `cameras`) — tema azul, imagem `surv4.png`
-2. **Orbis for Buildings** (id: `orbis`) — tema roxo, imagem `tv_orbis.png`, badge "Subscription"
+2. **Orbis for Buildings** (id: `orbis`) — tema aço (`brand.mist`), imagem `tv_orbis.png`, badge "Subscription"
 
-### Linha inferior — grade (lg:grid-cols-4)
-3. **Website Development** (id: `web`) — imagem `coding.png`
-4. **Intercom Systems** (id: `intercom`) — imagem `Intercom.png`
-5. **Structured Cabling** (id: `cabling`) — imagem `cabling.jpg`
-6. **Microsoft IT Services** (id: `it`) — imagem `datacenter.png`
+(Cameras usa `surv2.png`; o Hero usa `surv4.png` como "feed de câmera" com HUD.)
+
+### Lista de especificações (sem imagens, ícone + descrição + chips)
+3. **Website Development** (id: `web`)
+4. **Intercom Systems** (id: `intercom`)
+5. **IP Telephony** (id: `voip`)
+6. **Structured Cabling** (id: `cabling`)
+7. **Microsoft IT Services** (id: `it`)
 
 ---
 

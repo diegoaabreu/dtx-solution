@@ -2,79 +2,68 @@
 
 import { useTranslations } from "next-intl";
 import { Award, MapPin, Wrench, ShieldCheck } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const trustIcons = [Award, MapPin, Wrench, ShieldCheck];
 
-type TrustItem = {
-  title: string;
-  description: string;
-};
+type TrustItem = { title: string; description: string };
+type Stat = { value: string; label: string };
 
 export default function Trust() {
   const t = useTranslations("trust");
   const items = t.raw("items") as TrustItem[];
+  const stats = t.raw("stats") as Stat[];
+  const towns = t.raw("towns") as string[];
 
   return (
-    <section id="about" className="py-24 lg:py-32 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-brand-navy/20" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-blue/20 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-blue/20 to-transparent" />
+    <section id="about" aria-labelledby="about-title" className="py-20 lg:py-28 bg-brand-dark border-t border-white/[0.06]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeader id="about-title" eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
 
-      {/* Subtle glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand-blue/3 rounded-full blur-[100px] pointer-events-none" />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left: heading */}
-          <div>
-            <div className="inline-flex items-center gap-2 text-brand-blue text-sm font-semibold tracking-widest uppercase mb-4">
-              <div className="w-8 h-px bg-brand-blue/50" />
-              {t("title")}
+        {/* Stats */}
+        <dl className="grid grid-cols-1 sm:grid-cols-3 border-y border-white/10 divide-y sm:divide-y-0 sm:divide-x divide-white/10 mb-16">
+          {stats.map((s) => (
+            <div key={s.label} className="py-7 sm:px-8 first:sm:pl-0">
+              <dt className="font-mono text-xs uppercase tracking-[0.16em] text-white/60 mb-2">{s.label}</dt>
+              <dd className="font-display text-4xl lg:text-5xl font-bold text-white tabular">{s.value}</dd>
             </div>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 text-balance">
-              {t("title")}
-            </h2>
-            <p className="text-white/50 text-lg leading-relaxed">{t("subtitle")}</p>
+          ))}
+        </dl>
 
-            {/* Stats */}
-            <div className="mt-10 flex flex-wrap gap-8 sm:gap-10">
-              <div>
-                <div className="font-display text-3xl font-bold text-brand-blue">15+</div>
-                <div className="text-white/40 text-sm mt-1">Years Experience</div>
-              </div>
-              <div>
-                <div className="font-display text-3xl font-bold text-brand-blue">1000+</div>
-                <div className="text-white/40 text-sm mt-1">Cameras Installed</div>
-              </div>
-              <div>
-                <div className="font-display text-3xl font-bold text-brand-blue">50k+</div>
-                <div className="text-white/40 text-sm mt-1">Endpoints Managed</div>
-              </div>
-              <div>
-                <div className="font-display text-3xl font-bold text-brand-blue">100%</div>
-                <div className="text-white/40 text-sm mt-1">Satisfaction</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right: feature cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          {/* Reasons */}
+          <ul className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-9">
             {items.map((item, i) => {
               const Icon = trustIcons[i] || Award;
               return (
-                <div
-                  key={item.title}
-                  className="bg-brand-darker/80 border border-white/[0.07] rounded-xl p-5 hover:border-brand-blue/20 transition-colors duration-300 group"
-                >
-                  <div className="inline-flex p-2.5 rounded-lg bg-brand-blue/10 text-brand-blue mb-4 group-hover:bg-brand-blue/15 transition-colors">
-                    <Icon size={20} strokeWidth={1.5} />
-                  </div>
-                  <h3 className="font-display font-semibold text-white mb-2 text-sm">{item.title}</h3>
-                  <p className="text-white/45 text-xs leading-relaxed">{item.description}</p>
-                </div>
+                <li key={item.title} className="min-w-0">
+                  <Icon size={22} strokeWidth={1.6} className="text-brand-blue mb-3" aria-hidden="true" />
+                  <h3 className="font-display font-bold text-white mb-1.5">{item.title}</h3>
+                  <p className="text-white/70 text-[15px] leading-relaxed">{item.description}</p>
+                </li>
               );
             })}
+          </ul>
+
+          {/* Service area */}
+          <div className="lg:col-span-5 rounded-xl bg-brand-panel ring-1 ring-white/10 p-7">
+            <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-brand-blue mb-3 flex items-center gap-2">
+              <MapPin size={14} aria-hidden="true" />
+              {t("areaTitle")}
+            </h3>
+            <p className="text-white/75 text-[15px] leading-relaxed mb-5">{t("areaNote")}</p>
+            <ul className="flex flex-wrap gap-1.5">
+              {towns.map((town, i) => (
+                <li
+                  key={town}
+                  className={`text-sm px-2.5 py-1 rounded ${
+                    i === 0 ? "bg-brand-blue text-white font-semibold" : "bg-white/[0.06] text-white/80"
+                  }`}
+                >
+                  {town}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

@@ -13,6 +13,20 @@
     color: #ffffff;
   }
 
+  :focus-visible {
+    outline: 2px solid #0EA8E1;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
   ::selection {
     background-color: #0EA8E1;
     color: #ffffff;
@@ -30,6 +44,35 @@
 
   .glow-blue-sm {
     box-shadow: 0 0 20px rgba(14, 168, 225, 0.1);
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Corner brackets for the camera-feed frame */
+  .feed-corners {
+    background:
+      linear-gradient(#0EA8E1, #0EA8E1) top left / 18px 2px,
+      linear-gradient(#0EA8E1, #0EA8E1) top left / 2px 18px,
+      linear-gradient(#0EA8E1, #0EA8E1) top right / 18px 2px,
+      linear-gradient(#0EA8E1, #0EA8E1) top right / 2px 18px,
+      linear-gradient(#0EA8E1, #0EA8E1) bottom left / 18px 2px,
+      linear-gradient(#0EA8E1, #0EA8E1) bottom left / 2px 18px,
+      linear-gradient(#0EA8E1, #0EA8E1) bottom right / 18px 2px,
+      linear-gradient(#0EA8E1, #0EA8E1) bottom right / 2px 18px;
+    background-repeat: no-repeat;
+  }
+
+  /* Faint horizontal scanlines over the feed image */
+  .scanlines {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(8, 13, 26, 0.18) 0px,
+      rgba(8, 13, 26, 0.18) 1px,
+      transparent 1px,
+      transparent 3px
+    );
   }
 
   .border-gradient {

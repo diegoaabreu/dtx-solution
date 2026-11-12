@@ -3,7 +3,8 @@
     "services": "Services",
     "about": "About",
     "contact": "Contact",
-    "cta": "Get a Free Quote"
+    "cta": "Get a Free Quote",
+    "process": "How We Work"
   },
   "hero": {
     "badge": "Reading, MA — Greater Boston Area",
@@ -11,7 +12,18 @@
     "headlineAccent": "Matters Most.",
     "subheadline": "Tailored technology solutions for homeowners and small businesses — professionally installed and supported, built around your needs.",
     "cta": "Get a Free Quote",
-    "ctaSecondary": "Our Services"
+    "ctaSecondary": "Our Services",
+    "specs": [
+      "4K cameras",
+      "Cat6 / Cat6A / Fiber",
+      "IP intercom & voice",
+      "MCSE certified"
+    ],
+    "feed": {
+      "rec": "REC",
+      "cam": "CAM 03 · LOBBY",
+      "location": "Reading, MA"
+    }
   },
   "services": {
     "orbisLearnMore": "Learn More",
@@ -24,44 +36,102 @@
         "title": "Security Cameras",
         "badge": "Most Popular",
         "description": "Professional installation of digital surveillance systems for homes and businesses. Indoor, outdoor, day & night coverage — fully customized to your property. See everything, from anywhere, at any time.",
-        "features": ["4K & 4K+ resolution", "Remote monitoring via app", "Color night vision", "Cloud & local storage", "Residential & commercial", "Weatherproof & Vandal-Proof", "Code compliant installation"]
+        "features": [
+          "4K & 4K+ resolution",
+          "Remote monitoring via app",
+          "Color night vision",
+          "Cloud & local storage",
+          "Residential & commercial",
+          "Weatherproof & Vandal-Proof",
+          "Code compliant installation"
+        ]
       },
       {
         "id": "orbis",
         "title": "Orbis for Buildings",
         "badge": "Subscription",
         "description": "Orbis is a digital signage platform that turns any screen into a smart virtual directory for your building. DTX Solution installs and manages the lobby displays — tenants and visitors always see up-to-date building information.",
-        "features": ["Virtual building directory", "Lobby screen installation", "Dynamic content and Layout", "Web-managed content", "Subscription model", "Custom branding"]
+        "features": [
+          "Virtual building directory",
+          "Lobby screen installation",
+          "Dynamic content and Layout",
+          "Web-managed content",
+          "Subscription model",
+          "Custom branding"
+        ]
       },
       {
         "id": "web",
         "title": "Website Development",
         "badge": "",
         "description": "Custom-coded, responsive websites for small and medium businesses. Modern design, zero headaches — we handle everything from development to hosting, domain, and ongoing maintenance.",
-        "features": ["Custom development", "Responsive & mobile-first", "Hosting & domain included*", "Ongoing maintenance", "SEO-ready", "Fast & lightweight"]
+        "features": [
+          "Custom development",
+          "Responsive & mobile-first",
+          "Hosting & domain included*",
+          "Ongoing maintenance",
+          "SEO-ready",
+          "Fast & lightweight"
+        ]
       },
       {
         "id": "intercom",
         "title": "Intercom Systems",
         "badge": "",
         "description": "Modern IP intercom and access control systems for residential buildings and commercial properties. Manage entry from anywhere, on any device.",
-        "features": ["IP-based systems", "Mobile app control", "Video doorbell integration", "Multi-unit support", "Scalable for any size"]
+        "features": [
+          "IP-based systems",
+          "Mobile app control",
+          "Video doorbell integration",
+          "Multi-unit support",
+          "Scalable for any size"
+        ]
+      },
+      {
+        "id": "voip",
+        "title": "IP Telephony",
+        "badge": "",
+        "description": "Business phone systems that run on your network. Desk phones, softphones and mobile apps share one number, with auto-attendant and voicemail to email.",
+        "features": [
+          "Hosted or on-premise PBX",
+          "Number porting",
+          "Auto-attendant & call routing",
+          "Voicemail to email",
+          "Microsoft Teams calling",
+          "PoE desk phones"
+        ]
       },
       {
         "id": "cabling",
         "title": "Structured Cabling",
         "badge": "",
         "description": "Clean, professional network and low-voltage cabling for homes and businesses. From Cat6 data runs to coaxial and fiber — installed right the first time.",
-        "features": ["Cat5e / Cat6 / Cat6A", "Fiber optic", "Patch panel setup", "Clean in-wall routing", "Residential & commercial"]
+        "features": [
+          "Cat5e / Cat6 / Cat6A",
+          "Fiber optic",
+          "Patch panel setup",
+          "Clean in-wall routing",
+          "Residential & commercial"
+        ]
       },
       {
         "id": "it",
         "title": "Microsoft IT Services",
         "badge": "",
         "description": "Enterprise-grade IT services with deep Microsoft expertise. From Windows Server administration to Endpoint security baselines and fleet management.",
-        "features": ["Windows Server Infrastructure", "Active Directory / Azure Cloud", "Configuration Manager", "Security baselines", "Endpoint management", "MCSE-certified"]
+        "features": [
+          "Windows Server Infrastructure",
+          "Active Directory / Azure Cloud",
+          "Configuration Manager",
+          "Security baselines",
+          "Endpoint management",
+          "MCSE-certified"
+        ]
       }
-    ]
+    ],
+    "eyebrow": "Services",
+    "quoteCta": "Get a Free Quote",
+    "listTitle": "Infrastructure, voice & IT"
   },
   "trust": {
     "title": "Why Choose DTX Solution",
@@ -83,13 +153,44 @@
         "title": "Security-First Mindset",
         "description": "Every solution is designed with security baselines and best practices from day one."
       }
+    ],
+    "eyebrow": "About",
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Years of experience"
+      },
+      {
+        "value": "1,000+",
+        "label": "Cameras installed"
+      },
+      {
+        "value": "50k+",
+        "label": "Endpoints managed"
+      }
+    ],
+    "areaTitle": "Service area",
+    "areaNote": "Based in Reading, MA, with on-site service across Greater Boston.",
+    "towns": [
+      "Reading",
+      "North Reading",
+      "Wakefield",
+      "Stoneham",
+      "Woburn",
+      "Wilmington",
+      "Burlington",
+      "Lynnfield",
+      "Melrose",
+      "Malden",
+      "Medford",
+      "Boston"
     ]
   },
   "partners": {
-    "clientsTitle": "Clients & Partners",
+    "clientsTitle": "Clients",
     "clientsSubtitle": "Trusted by property management companies and organizations across Greater Boston.",
-    "certsTitle": "Certifications",
-    "certsSubtitle": "Enterprise-level credentials backing every project we deliver."
+    "eyebrow": "Trusted By",
+    "techTitle": "Technology we install"
   },
   "contact": {
     "title": "Get in Touch",
@@ -102,7 +203,24 @@
     "submit": "Send Message",
     "sending": "Sending...",
     "success": "Message sent! We'll be in touch shortly.",
-    "services": ["Security Cameras", "Structured Cabling", "Intercom Systems", "Orbis for Buildings", "Microsoft IT Services", "Website Development", "Other"]
+    "services": [
+      "Security Cameras",
+      "Structured Cabling",
+      "Intercom Systems",
+      "IP Telephony",
+      "Orbis for Buildings",
+      "Microsoft IT Services",
+      "Website Development",
+      "Other"
+    ],
+    "eyebrow": "Contact",
+    "infoTitle": "Contact info",
+    "follow": "Follow us",
+    "estimateStrong": "Free on-site estimates",
+    "estimateRest": "for all installations in the Greater Boston area.",
+    "select": "Select...",
+    "messagePlaceholder": "Tell us about your project...",
+    "error": "We couldn't send your message. Please try again, or email diego@dtxsolution.com directly."
   },
   "footer": {
     "tagline": "Smart security and IT solutions for Greater Boston.",
@@ -111,5 +229,28 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
+  },
+  "process": {
+    "eyebrow": "How We Work",
+    "title": "From site survey to support",
+    "subtitle": "Every project follows the same four steps, whether it's one camera or a full building.",
+    "steps": [
+      {
+        "title": "Free site survey",
+        "description": "We walk the property and check power, network, mounting points and coverage."
+      },
+      {
+        "title": "Design & quote",
+        "description": "You get a written plan: device positions, cable paths, equipment list and an itemized price."
+      },
+      {
+        "title": "Installation",
+        "description": "Clean, code-compliant work. Every cable labeled, every device tested before we leave."
+      },
+      {
+        "title": "Handover & support",
+        "description": "We set up the apps, show your team how it works, and stay on call for service and upgrades."
+      }
+    ]
   }
 }

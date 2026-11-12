@@ -3,7 +3,8 @@
     "services": "Serviços",
     "about": "Sobre",
     "contact": "Contato",
-    "cta": "Solicitar Orçamento"
+    "cta": "Solicitar Orçamento",
+    "process": "Como Trabalhamos"
   },
   "hero": {
     "badge": "Reading, MA — Greater Boston Area",
@@ -11,7 +12,18 @@
     "headlineAccent": "Mais Importa.",
     "subheadline": "Soluções de tecnologia sob medida para residências e pequenas empresas — instaladas com profissionalismo, com suporte contínuo e criadas para as suas necessidades.",
     "cta": "Solicitar Orçamento",
-    "ctaSecondary": "Nossos Serviços"
+    "ctaSecondary": "Nossos Serviços",
+    "specs": [
+      "Câmeras 4K",
+      "Cat6 / Cat6A / Fibra",
+      "Interfone e voz IP",
+      "Certificação MCSE"
+    ],
+    "feed": {
+      "rec": "REC",
+      "cam": "CAM 03 · LOBBY",
+      "location": "Reading, MA"
+    }
   },
   "services": {
     "orbisLearnMore": "Saiba Mais",
@@ -24,44 +36,102 @@
         "title": "Câmeras de Segurança",
         "badge": "Mais Popular",
         "description": "Instalação profissional de sistemas de vigilância digital para residências e empresas. Cobertura interna, externa, diurna e noturna — totalmente personalizada. Veja tudo, de qualquer lugar, a qualquer hora.",
-        "features": ["Resolução 4K & 4K+", "Monitoramento remoto via app", "Visão noturna colorida", "Armazenamento local e nuvem", "Residencial & comercial", "À prova d'água & antivandálismo", "Instalação conforme código elétrico"]
+        "features": [
+          "Resolução 4K & 4K+",
+          "Monitoramento remoto via app",
+          "Visão noturna colorida",
+          "Armazenamento local e nuvem",
+          "Residencial & comercial",
+          "À prova d'água & antivandálismo",
+          "Instalação conforme código elétrico"
+        ]
       },
       {
         "id": "orbis",
         "title": "Orbis para Edifícios",
         "badge": "Assinatura",
         "description": "O Orbis é uma plataforma de sinalização digital que transforma qualquer tela em um diretório virtual inteligente para seu edifício. A DTX Solution instala e gerencia os displays no lobby — inquilinos e visitantes sempre veem informações atualizadas do prédio.",
-        "features": ["Diretório virtual do edifício", "Instalação de tela no lobby", "Conteúdo e Layout dinâmicos", "Conteúdo gerenciado pela web", "Modelo de assinatura", "Identidade visual personalizada"]
+        "features": [
+          "Diretório virtual do edifício",
+          "Instalação de tela no lobby",
+          "Conteúdo e Layout dinâmicos",
+          "Conteúdo gerenciado pela web",
+          "Modelo de assinatura",
+          "Identidade visual personalizada"
+        ]
       },
       {
         "id": "web",
         "title": "Desenvolvimento de Websites",
         "badge": "",
         "description": "Websites responsivos com código personalizado para pequenas e médias empresas. Design moderno, zero preocupação — cuidamos de tudo, do desenvolvimento à hospedagem, domínio e manutenção.",
-        "features": ["Desenvolvimento personalizado", "Responsivo & mobile-first", "Hospedagem & domínio incluídos*", "Manutenção contínua", "Otimizado para SEO", "Rápido e leve"]
+        "features": [
+          "Desenvolvimento personalizado",
+          "Responsivo & mobile-first",
+          "Hospedagem & domínio incluídos*",
+          "Manutenção contínua",
+          "Otimizado para SEO",
+          "Rápido e leve"
+        ]
       },
       {
         "id": "intercom",
         "title": "Sistemas de Interfone",
         "badge": "",
         "description": "Sistemas modernos de interfone IP e controle de acesso para condomínios e propriedades comerciais. Gerencie a entrada de qualquer lugar, em qualquer dispositivo.",
-        "features": ["Sistemas baseados em IP", "Controle por app", "Integração com videoporteiro", "Suporte multi-unidade", "Escalável para qualquer tamanho"]
+        "features": [
+          "Sistemas baseados em IP",
+          "Controle por app",
+          "Integração com videoporteiro",
+          "Suporte multi-unidade",
+          "Escalável para qualquer tamanho"
+        ]
+      },
+      {
+        "id": "voip",
+        "title": "Telefonia IP",
+        "badge": "",
+        "description": "Sistemas de telefonia empresarial que rodam na sua rede. Telefones de mesa, softphones e apps no celular compartilham o mesmo número, com URA e correio de voz por email.",
+        "features": [
+          "PBX em nuvem ou local",
+          "Portabilidade de número",
+          "URA e roteamento de chamadas",
+          "Correio de voz por email",
+          "Chamadas pelo Microsoft Teams",
+          "Telefones PoE"
+        ]
       },
       {
         "id": "cabling",
         "title": "Cabeamento Estruturado",
         "badge": "",
         "description": "Cabeamento de rede e baixa tensão limpo e profissional para residências e empresas. De cabos Cat6 a fibra ótica e coaxial — instalado corretamente desde o início.",
-        "features": ["Cat5e / Cat6 / Cat6A", "Fibra ótica", "Configuração de patch panel", "Passagem interna de parede", "Residencial & comercial"]
+        "features": [
+          "Cat5e / Cat6 / Cat6A",
+          "Fibra ótica",
+          "Configuração de patch panel",
+          "Passagem interna de parede",
+          "Residencial & comercial"
+        ]
       },
       {
         "id": "it",
         "title": "Serviços de TI Microsoft",
         "badge": "",
         "description": "Serviços de TI de nível enterprise com expertise profunda em Microsoft. De administração de Windows Server a baselines de segurança de endpoints e gestão de frota.",
-        "features": ["Windows Server Infrastructure", "Active Directory / Azure Cloud", "Configuration Manager", "Baselines de segurança", "Gestão de endpoints", "Certificação MCSE"]
+        "features": [
+          "Windows Server Infrastructure",
+          "Active Directory / Azure Cloud",
+          "Configuration Manager",
+          "Baselines de segurança",
+          "Gestão de endpoints",
+          "Certificação MCSE"
+        ]
       }
-    ]
+    ],
+    "eyebrow": "Serviços",
+    "quoteCta": "Solicitar Orçamento",
+    "listTitle": "Infraestrutura, voz e TI"
   },
   "trust": {
     "title": "Por Que a DTX Solution",
@@ -83,13 +153,44 @@
         "title": "Mentalidade Security-First",
         "description": "Cada solução é projetada com baselines de segurança e boas práticas desde o início."
       }
+    ],
+    "eyebrow": "Sobre",
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Anos de experiência"
+      },
+      {
+        "value": "1.000+",
+        "label": "Câmeras instaladas"
+      },
+      {
+        "value": "50 mil+",
+        "label": "Endpoints gerenciados"
+      }
+    ],
+    "areaTitle": "Área de atendimento",
+    "areaNote": "Sediados em Reading, MA, com atendimento presencial em toda a Greater Boston.",
+    "towns": [
+      "Reading",
+      "North Reading",
+      "Wakefield",
+      "Stoneham",
+      "Woburn",
+      "Wilmington",
+      "Burlington",
+      "Lynnfield",
+      "Melrose",
+      "Malden",
+      "Medford",
+      "Boston"
     ]
   },
   "partners": {
-    "clientsTitle": "Clientes & Parceiros",
+    "clientsTitle": "Clientes",
     "clientsSubtitle": "Confiança de empresas de gestão de propriedades e organizações em toda a Greater Boston.",
-    "certsTitle": "Certificações",
-    "certsSubtitle": "Credenciais de nível enterprise por trás de cada projeto que entregamos."
+    "eyebrow": "Confiam em Nós",
+    "techTitle": "Tecnologias que instalamos"
   },
   "contact": {
     "title": "Entre em Contato",
@@ -102,7 +203,24 @@
     "submit": "Enviar Mensagem",
     "sending": "Enviando...",
     "success": "Mensagem enviada! Entraremos em contato em breve.",
-    "services": ["Câmeras de Segurança", "Cabeamento Estruturado", "Sistemas de Interfone", "Orbis para Edifícios", "Serviços de TI Microsoft", "Desenvolvimento de Websites", "Outro"]
+    "services": [
+      "Câmeras de Segurança",
+      "Cabeamento Estruturado",
+      "Sistemas de Interfone",
+      "Telefonia IP",
+      "Orbis para Edifícios",
+      "Serviços de TI Microsoft",
+      "Desenvolvimento de Websites",
+      "Outro"
+    ],
+    "eyebrow": "Contato",
+    "infoTitle": "Informações de contato",
+    "follow": "Siga-nos",
+    "estimateStrong": "Orçamento presencial gratuito",
+    "estimateRest": "para todas as instalações na região de Greater Boston.",
+    "select": "Selecione...",
+    "messagePlaceholder": "Conte-nos sobre o seu projeto...",
+    "error": "Não conseguimos enviar sua mensagem. Tente novamente ou escreva direto para diego@dtxsolution.com."
   },
   "footer": {
     "tagline": "Segurança inteligente e soluções de TI para Greater Boston.",
@@ -111,5 +229,28 @@
       "privacy": "Política de Privacidade",
       "terms": "Termos de Serviço"
     }
+  },
+  "process": {
+    "eyebrow": "Como Trabalhamos",
+    "title": "Da visita técnica ao suporte",
+    "subtitle": "Todo projeto segue as mesmas quatro etapas, seja uma câmera ou um prédio inteiro.",
+    "steps": [
+      {
+        "title": "Visita técnica gratuita",
+        "description": "Percorremos o local e verificamos energia, rede, pontos de fixação e cobertura."
+      },
+      {
+        "title": "Projeto e orçamento",
+        "description": "Você recebe um plano por escrito: posição dos equipamentos, rotas de cabo, lista de material e preço detalhado."
+      },
+      {
+        "title": "Instalação",
+        "description": "Trabalho limpo e dentro das normas. Cada cabo identificado, cada equipamento testado antes de sairmos."
+      },
+      {
+        "title": "Entrega e suporte",
+        "description": "Configuramos os apps, mostramos à sua equipe como usar e seguimos disponíveis para manutenção e upgrades."
+      }
+    ]
   }
 }

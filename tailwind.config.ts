@@ -15,11 +15,14 @@ const config: Config = {
           steel: "#4D7B9A",
           dark: "#080D1A",
           darker: "#0D1525",
+          panel: "#111B30",   // raised surfaces (feed frame, form)
+          mist: "#A9C3D6",    // light steel — Orbis accent text, secondary labels
         },
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
         display: ["var(--font-montserrat)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "Consolas", "monospace"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

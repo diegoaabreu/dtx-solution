@@ -42,3 +42,4 @@ Cred.txt
 
 # Playwright screenshots (dev only)
 /C:/tmp/
+*.tsbuildinfo

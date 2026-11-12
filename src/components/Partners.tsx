@@ -2,49 +2,54 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import SectionHeader from "./SectionHeader";
 
 const clients = [
   { name: "United Properties Inc", src: "/Assets/unitedProperties.png" },
   { name: "Eastport Real Estate Services", src: "/Assets/eastport.jpg" },
   { name: "Housing Families", src: "/Assets/housingfamilies.png" },
   { name: "LTS", src: "/Assets/LTS.png" },
+];
+
+const vendors = [
   { name: "Ubiquiti", src: "/Assets/ubiquiti.png" },
   { name: "Cisco", src: "/Assets/cisco.png" },
 ];
+
+function LogoRow({ logos, cols }: { logos: { name: string; src: string }[]; cols: string }) {
+  return (
+    <ul className={`grid ${cols} gap-px bg-slate-200 rounded-xl overflow-hidden ring-1 ring-white/10`}>
+      {logos.map((l) => (
+        <li key={l.name} className="bg-white flex items-center justify-center px-6 py-7">
+          <Image
+            src={l.src}
+            alt={l.name}
+            width={180}
+            height={60}
+            className="h-10 w-auto max-w-full object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition duration-300"
+          />
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export default function Partners() {
   const t = useTranslations("partners");
 
   return (
-    <section className="py-24 relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-blue/20 to-transparent" />
+    <section aria-labelledby="partners-title" className="py-20 lg:py-28 bg-brand-darker border-t border-white/[0.06]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeader id="partners-title" eyebrow={t("eyebrow")} title={t("clientsTitle")} subtitle={t("clientsSubtitle")} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Clients & Partners */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 text-brand-blue text-sm font-semibold tracking-widest uppercase mb-4">
-            <div className="w-8 h-px bg-brand-blue/50" />
-            {t("clientsTitle")}
-            <div className="w-8 h-px bg-brand-blue/50" />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-end">
+          <div className="lg:col-span-8 min-w-0">
+            <LogoRow logos={clients} cols="grid-cols-2 sm:grid-cols-4" />
           </div>
-          <p className="text-white/50 max-w-xl mx-auto">{t("clientsSubtitle")}</p>
-        </div>
-
-        <div className="flex flex-wrap items-center justify-center gap-6">
-          {clients.map((client) => (
-            <div
-              key={client.name}
-              className="bg-white rounded-xl px-8 py-6 flex items-center justify-center hover:scale-[1.03] transition-transform duration-300 shadow-lg shadow-black/20"
-            >
-              <Image
-                src={client.src}
-                alt={client.name}
-                width={180}
-                height={60}
-                className="h-10 w-auto object-contain"
-              />
-            </div>
-          ))}
+          <div className="lg:col-span-4 min-w-0">
+            <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-white/60 mb-3">{t("techTitle")}</h3>
+            <LogoRow logos={vendors} cols="grid-cols-2" />
+          </div>
         </div>
       </div>
     </section>

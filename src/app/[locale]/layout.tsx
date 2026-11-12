@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, JetBrains_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -12,6 +12,12 @@ const inter = Inter({
   display: "swap",
 });
 
+const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -21,8 +27,8 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "DTX Solution | Smart Security & IT Solutions",
   description:
-    "Professional installation of security cameras, intercom systems, structured cabling, and Microsoft IT infrastructure for residential and commercial clients in Greater Boston.",
-  keywords: "security cameras, intercom systems, structured cabling, Orbis, IT services, Microsoft, Boston, Reading MA",
+    "Professional installation of security cameras, intercom systems, IP telephony, structured cabling, and Microsoft IT infrastructure for residential and commercial clients in Greater Boston.",
+  keywords: "security cameras, intercom systems, IP telephony, VoIP, business phone systems, structured cabling, Orbis, IT services, Microsoft, Boston, Reading MA",
   icons: {
     icon: "/Assets/logo_2025_Icon.png",
     apple: "/Assets/logo_2025_Icon.png",
@@ -52,7 +58,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} className="scroll-smooth">
-      <body className={`${inter.variable} ${montserrat.variable} font-sans bg-brand-dark text-white antialiased`}>
+      <body className={`${inter.variable} ${montserrat.variable} ${mono.variable} font-sans bg-brand-dark text-white antialiased`}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

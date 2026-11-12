@@ -7,7 +7,7 @@ export default function Footer() {
   const locale = useLocale();
 
   return (
-    <footer className="border-t border-white/[0.06] bg-brand-darker/80">
+    <footer className="border-t border-white/[0.08] bg-brand-darker">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo + tagline */}
@@ -24,37 +24,39 @@ export default function Footer() {
                 <span className="font-sans font-light text-[9px] tracking-[0.2em] uppercase" style={{ color: "#4D7B9A" }}>Solution</span>
               </span>
             </div>
-            <p className="text-white/30 text-sm">{t("tagline")}</p>
+            <p className="text-white/60 text-sm">{t("tagline")}</p>
           </div>
 
           {/* Social links */}
           <div className="flex items-center gap-3">
             <a
               href="https://www.instagram.com/dtx.solution/"
+              aria-label="Instagram"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-lg bg-white/[0.04] text-white/40 hover:bg-brand-blue/15 hover:text-brand-blue transition-all duration-200"
+              className="p-2.5 rounded-lg bg-white/[0.04] text-white/70 hover:bg-brand-blue/15 hover:text-brand-blue transition-all duration-200"
             >
               <Instagram size={16} />
             </a>
             <a
               href="https://www.facebook.com/dtx.solution85"
+              aria-label="Facebook"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-lg bg-white/[0.04] text-white/40 hover:bg-brand-blue/15 hover:text-brand-blue transition-all duration-200"
+              className="p-2.5 rounded-lg bg-white/[0.04] text-white/70 hover:bg-brand-blue/15 hover:text-brand-blue transition-all duration-200"
             >
               <Facebook size={16} />
             </a>
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-white/[0.05] flex flex-col sm:flex-row items-center justify-between gap-3 text-white/25 text-xs">
+        <div className="mt-8 pt-6 border-t border-white/[0.05] flex flex-col sm:flex-row items-center justify-between gap-3 text-white/55 text-xs">
           <span>© {new Date().getFullYear()} DTX Solution. {t("rights")}</span>
           <div className="flex gap-5">
-            <a href={`/${locale}/privacy`} className="hover:text-white/50 transition-colors">
+            <a href={`/${locale}/privacy`} className="hover:text-white transition-colors">
               {t("links.privacy")}
             </a>
-            <a href={`/${locale}/terms`} className="hover:text-white/50 transition-colors">
+            <a href={`/${locale}/terms`} className="hover:text-white transition-colors">
               {t("links.terms")}
             </a>
           </div>

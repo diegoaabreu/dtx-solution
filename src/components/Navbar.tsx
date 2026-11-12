@@ -38,6 +38,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "#services", label: t("services") },
+    { href: "#process", label: t("process") },
     { href: "#about", label: t("about") },
     { href: "#contact", label: t("contact") },
   ];
@@ -76,7 +77,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-white/70 hover:text-white transition-colors duration-200 font-medium"
+              className="text-sm text-white/75 hover:text-white transition-colors duration-200 font-medium"
             >
               {link.label}
             </a>
@@ -88,7 +89,11 @@ export default function Navbar() {
           {/* Language switcher */}
           <div className="relative">
             <button
+              type="button"
               onClick={() => setLangOpen(!langOpen)}
+              aria-haspopup="true"
+              aria-expanded={langOpen}
+              aria-label="Language"
               className="flex items-center gap-1.5 text-sm text-white/60 hover:text-white transition-colors px-2 py-1.5 rounded-md hover:bg-white/5"
             >
               <span className={`fi fi-${localeNames[locale].flagCode} rounded-sm`} style={{ fontSize: 16 }} />
@@ -115,14 +120,17 @@ export default function Navbar() {
           {/* CTA */}
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue/90 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-brand-blue/25"
+            className="hidden md:inline-flex items-center gap-2 bg-brand-blue hover:bg-[#25b4e8] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors duration-200"
           >
             {t("cta")}
           </a>
 
           {/* Mobile menu toggle */}
           <button
+            type="button"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-expanded={menuOpen}
+            aria-label="Menu"
             className="md:hidden text-white/70 hover:text-white p-1.5"
           >
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
