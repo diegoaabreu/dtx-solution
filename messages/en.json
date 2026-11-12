@@ -170,27 +170,28 @@
       }
     ],
     "areaTitle": "Service area",
-    "areaNote": "Based in Reading, MA, with on-site service across Greater Boston.",
-    "towns": [
-      "Reading",
-      "North Reading",
-      "Wakefield",
-      "Stoneham",
-      "Woburn",
-      "Wilmington",
-      "Burlington",
-      "Lynnfield",
-      "Melrose",
-      "Malden",
-      "Medford",
-      "Boston"
-    ]
+    "areaNote": "Every town inside I-495, from the North Shore down to the South Shore. Based in Reading, MA.",
+    "regions": [
+      "North Shore",
+      "Merrimack Valley",
+      "MetroWest",
+      "Boston & Cambridge",
+      "South Shore"
+    ],
+    "areaAsk": "Not sure if you are in range? Ask us.",
+    "mapLabels": {
+      "boston": "Boston",
+      "reading": "Reading",
+      "ring": "I-495",
+      "inner": "I-95 / 128",
+      "ocean": "Atlantic"
+    }
   },
   "partners": {
     "clientsTitle": "Clients",
     "clientsSubtitle": "Trusted by property management companies and organizations across Greater Boston.",
     "eyebrow": "Trusted By",
-    "techTitle": "Technology we install"
+    "techTitle": "Technology partners"
   },
   "contact": {
     "title": "Get in Touch",

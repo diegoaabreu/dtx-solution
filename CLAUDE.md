@@ -68,8 +68,8 @@ Site institucional da **DTX Solution** — empresa de tecnologia, segurança e T
 │   │   ├── SectionHeader.tsx    # Cabeçalho de seção padrão (eyebrow mono + título + subtítulo)
 │   │   ├── Services.tsx         # 2 cards featured + lista de especificações (5 serviços)
 │   │   ├── Process.tsx          # "Como trabalhamos" — 4 etapas numeradas
-│   │   ├── Trust.tsx            # Números, diferenciais e área de atendimento
-│   │   ├── Partners.tsx         # Logos de clientes + tecnologias instaladas
+│   │   ├── Trust.tsx            # Números, diferenciais e área de atendimento (mapa SVG esquemático da I-495)
+│   │   ├── Partners.tsx         # Logos de clientes + parceiros de tecnologia
 │   │   ├── Contact.tsx          # Formulário de contato + info
 │   │   └── Footer.tsx           # Rodapé com logo, redes sociais, links legais
 │   │
@@ -137,7 +137,7 @@ Três idiomas: **EN** (padrão), **PT** (Português BR), **ES** (Espanhol)
 
 **Estrutura das mensagens:**
 ```
-nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], stats[], towns[]), partners, contact, footer
+nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], stats[], regions[], mapLabels), partners, contact, footer
 ```
 
 ---
@@ -218,6 +218,12 @@ Cards com `overflow-hidden rounded-xl` e filhos com `scale` no hover podem "sang
 
 ### Reading mode (Readability.js)
 O algoritmo de leitura do browser ignora formulários e elementos com baixa densidade textual. O `<address>` com os contatos está presente no DOM mas pode não ser detectado — limitação inerente do algoritmo para páginas que não são artigos.
+
+### Área de atendimento
+Tudo dentro da I-495, do North Shore ao South Shore. Não listar cidades individualmente (são dezenas); usar regiões + mapa esquemático.
+
+### Clientes vs. parceiros
+Clientes: United Properties, Eastport, Housing Families. Parceiros de tecnologia: Microsoft, Cisco, Ubiquiti, UNV, LTS, Asterisk. **LTS não é cliente.**
 
 ### Imagens no Vercel
 Arquivos adicionados à pasta `public/Assets/` precisam ser commitados explicitamente com `git add` — o Vercel só recebe o que está no repositório.

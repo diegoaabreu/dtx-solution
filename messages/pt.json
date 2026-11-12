@@ -170,27 +170,28 @@
       }
     ],
     "areaTitle": "Área de atendimento",
-    "areaNote": "Sediados em Reading, MA, com atendimento presencial em toda a Greater Boston.",
-    "towns": [
-      "Reading",
-      "North Reading",
-      "Wakefield",
-      "Stoneham",
-      "Woburn",
-      "Wilmington",
-      "Burlington",
-      "Lynnfield",
-      "Melrose",
-      "Malden",
-      "Medford",
-      "Boston"
-    ]
+    "areaNote": "Todas as cidades dentro da I-495, do North Shore ao South Shore. Sediados em Reading, MA.",
+    "regions": [
+      "North Shore",
+      "Merrimack Valley",
+      "MetroWest",
+      "Boston e Cambridge",
+      "South Shore"
+    ],
+    "areaAsk": "Não sabe se atendemos sua cidade? Pergunte.",
+    "mapLabels": {
+      "boston": "Boston",
+      "reading": "Reading",
+      "ring": "I-495",
+      "inner": "I-95 / 128",
+      "ocean": "Atlântico"
+    }
   },
   "partners": {
     "clientsTitle": "Clientes",
     "clientsSubtitle": "Confiança de empresas de gestão de propriedades e organizações em toda a Greater Boston.",
     "eyebrow": "Confiam em Nós",
-    "techTitle": "Tecnologias que instalamos"
+    "techTitle": "Parceiros de tecnologia"
   },
   "contact": {
     "title": "Entre em Contato",
