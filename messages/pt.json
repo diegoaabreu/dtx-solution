@@ -61,17 +61,16 @@
         ]
       },
       {
-        "id": "web",
-        "title": "Desenvolvimento de Websites",
+        "id": "cabling",
+        "title": "Cabeamento Estruturado",
         "badge": "",
-        "description": "Websites responsivos com código personalizado para pequenas e médias empresas. Design moderno, zero preocupação — cuidamos de tudo, do desenvolvimento à hospedagem, domínio e manutenção.",
+        "description": "Cabeamento de rede e baixa tensão limpo e profissional para residências e empresas. De cabos Cat6 a fibra ótica e coaxial — instalado corretamente desde o início.",
         "features": [
-          "Desenvolvimento personalizado",
-          "Responsivo & mobile-first",
-          "Hospedagem & domínio incluídos*",
-          "Manutenção contínua",
-          "Otimizado para SEO",
-          "Rápido e leve"
+          "Cat5e / Cat6 / Cat6A",
+          "Fibra ótica",
+          "Configuração de patch panel",
+          "Passagem interna de parede",
+          "Residencial & comercial"
         ]
       },
       {
@@ -102,30 +101,32 @@
         ]
       },
       {
-        "id": "cabling",
-        "title": "Cabeamento Estruturado",
-        "badge": "",
-        "description": "Cabeamento de rede e baixa tensão limpo e profissional para residências e empresas. De cabos Cat6 a fibra ótica e coaxial — instalado corretamente desde o início.",
-        "features": [
-          "Cat5e / Cat6 / Cat6A",
-          "Fibra ótica",
-          "Configuração de patch panel",
-          "Passagem interna de parede",
-          "Residencial & comercial"
-        ]
-      },
-      {
         "id": "it",
         "title": "Serviços de TI Microsoft",
         "badge": "",
-        "description": "Serviços de TI de nível enterprise com expertise profunda em Microsoft. De administração de Windows Server a baselines de segurança de endpoints e gestão de frota.",
+        "description": "Serviços de TI de nível enterprise com expertise profunda em Microsoft. Do Microsoft 365 (Office 365), com email e colaboração, a Windows Server, baselines de segurança de endpoints e gestão de frota.",
         "features": [
+          "Microsoft 365 / Office 365",
           "Windows Server Infrastructure",
           "Active Directory / Azure Cloud",
           "Configuration Manager",
           "Baselines de segurança",
           "Gestão de endpoints",
           "Certificação MCSE"
+        ]
+      },
+      {
+        "id": "web",
+        "title": "Desenvolvimento de Websites",
+        "badge": "",
+        "description": "Websites responsivos com código personalizado para pequenas e médias empresas. Design moderno, zero preocupação — cuidamos de tudo, do desenvolvimento à hospedagem, domínio e manutenção.",
+        "features": [
+          "Desenvolvimento personalizado",
+          "Responsivo & mobile-first",
+          "Hospedagem & domínio incluídos*",
+          "Manutenção contínua",
+          "Otimizado para SEO",
+          "Rápido e leve"
         ]
       }
     ],

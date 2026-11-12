@@ -151,12 +151,12 @@ nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], st
 
 (Cameras usa `surv2.png`; o Hero usa `surv4.png` como "feed de câmera" com HUD.)
 
-### Lista de especificações (sem imagens, ícone + descrição + chips)
-3. **Website Development** (id: `web`)
-4. **Intercom Systems** (id: `intercom`)
-5. **IP Telephony** (id: `voip`)
-6. **Structured Cabling** (id: `cabling`)
-7. **Microsoft IT Services** (id: `it`)
+### Lista de especificações (miniatura + ícone + descrição + chips)
+3. **Structured Cabling** (id: `cabling`) — miniatura `cabling.jpg`
+4. **Intercom Systems** (id: `intercom`) — miniatura `Intercom.png`
+5. **IP Telephony** (id: `voip`) — sem foto ainda (painel com ícone); adicionar em `rowImageMap` no `Services.tsx`
+6. **Microsoft IT Services** (id: `it`) — miniatura `datacenter.png`, inclui Microsoft 365 / Office 365
+7. **Website Development** (id: `web`) — miniatura `coding.png`
 
 ---
 

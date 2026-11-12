@@ -16,6 +16,14 @@ const iconMap: Record<string, React.ElementType> = {
   web: Monitor,
 };
 
+// Row thumbnails for the spec list. A service without an entry gets a branded icon panel.
+const rowImageMap: Record<string, string> = {
+  intercom: "/Assets/Intercom.png",
+  cabling: "/Assets/cabling.jpg",
+  it: "/Assets/datacenter.png",
+  web: "/Assets/coding.png",
+};
+
 type ServiceItem = {
   id: string;
   title: string;
@@ -112,17 +120,50 @@ export default function Services() {
               return (
                 <li
                   key={item.id}
-                  className="group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-7 border-b border-white/10 hover:bg-white/[0.02] transition-colors"
+                  className="group grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 py-7 border-b border-white/10"
                 >
-                  <div className="md:col-span-4 lg:col-span-3 flex items-start gap-3.5 min-w-0">
-                    <span className="mt-0.5 shrink-0 text-brand-blue">
-                      <Icon size={22} strokeWidth={1.6} aria-hidden="true" />
-                    </span>
-                    <h4 className="font-display text-lg font-bold text-white leading-snug">{item.title}</h4>
+                  {/* Thumbnail */}
+                  <div className="md:col-span-4 lg:col-span-3 min-w-0">
+                    <div className="relative aspect-[16/9] md:aspect-[4/3] lg:aspect-[16/10] w-full max-w-full overflow-hidden rounded-lg ring-1 ring-white/10 bg-brand-navy">
+                      {rowImageMap[item.id] ? (
+                        <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.04]">
+                          <Image
+                            src={rowImageMap[item.id]}
+                            alt=""
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 25vw"
+                          />
+                          <div aria-hidden="true" className="absolute inset-0 bg-brand-dark/15" />
+                        </div>
+                      ) : (
+                        <div
+                          aria-hidden="true"
+                          className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-brand-navy to-brand-panel"
+                        >
+                          <div
+                            className="absolute inset-0 opacity-[0.08]"
+                            style={{
+                              backgroundImage:
+                                "linear-gradient(rgba(14,168,225,1) 1px, transparent 1px), linear-gradient(90deg, rgba(14,168,225,1) 1px, transparent 1px)",
+                              backgroundSize: "24px 24px",
+                            }}
+                          />
+                          <Icon size={44} strokeWidth={1.2} className="relative text-brand-blue" />
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <p className="md:col-span-8 lg:col-span-5 text-white/70 text-[15px] leading-relaxed min-w-0">
-                    {item.description}
-                  </p>
+
+                  {/* Title + description */}
+                  <div className="md:col-span-8 lg:col-span-5 min-w-0">
+                    <div className="flex items-center gap-3 mb-2">
+                      <Icon size={20} strokeWidth={1.6} className="shrink-0 text-brand-blue" aria-hidden="true" />
+                      <h4 className="font-display text-lg font-bold text-white leading-snug">{item.title}</h4>
+                    </div>
+                    <p className="text-white/70 text-[15px] leading-relaxed">{item.description}</p>
+                  </div>
+
                   <ul className="md:col-start-5 md:col-span-8 lg:col-start-auto lg:col-span-4 flex flex-wrap gap-1.5 content-start min-w-0">
                     {item.features.map((f) => (
                       <li
