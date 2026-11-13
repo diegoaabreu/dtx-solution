@@ -75,7 +75,8 @@ export default function Services() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <FeaturedCard
             item={cameras}
-            image="/Assets/surv2.png"
+            image="/Assets/cameras.jpg"
+            imagePosition="object-top"
             tone="blue"
             actions={
               <a
@@ -223,11 +224,13 @@ export default function Services() {
 function FeaturedCard({
   item,
   image,
+  imagePosition = "object-center",
   tone,
   actions,
 }: {
   item: ServiceItem;
   image: string;
+  imagePosition?: string;
   tone: "blue" | "steel";
   actions: React.ReactNode;
 }) {
@@ -245,7 +248,7 @@ function FeaturedCard({
       {/* Image band */}
       <div className="relative h-44 sm:h-52 w-full overflow-hidden">
         <div className="absolute inset-0 transition-transform duration-700 hover:scale-[1.03]">
-          <Image src={image} alt="" fill className="object-cover object-center" sizes="(max-width: 1024px) 100vw, 50vw" />
+          <Image src={image} alt="" fill className={`object-cover ${imagePosition}`} sizes="(max-width: 1024px) 100vw, 50vw" />
         </div>
         <div
           aria-hidden="true"

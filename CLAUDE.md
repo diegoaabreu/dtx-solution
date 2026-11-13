@@ -161,10 +161,10 @@ nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], st
 ## Serviços (ordem de exibição)
 
 ### Linha superior — cards featured (lado a lado, lg:grid-cols-2)
-1. **Security Cameras** (id: `cameras`) — tema azul, imagem `surv2.png`
+1. **Security Cameras** (id: `cameras`) — tema azul, imagem `cameras.jpg` (IA, recorte `object-top`)
 2. **Orbis for Buildings** (id: `orbis`) — tema aço (`brand.mist`), imagem `tv_orbis.png`, badge "Subscription"
 
-(O Hero usa `hero-lobby.jpg` (IA) como "feed de câmera" com HUD. `cabling.jpg` teve os cabos recoloridos de roxo para azul.)
+(O Hero usa `hero-lobby.jpg` (IA) como "feed de câmera" com HUD. `cabling.jpg` e `webdev.jpg` também são IA, no mesmo estilo (blue hour, navy/cyan).)
 
 ### Lista de especificações (miniatura + ícone + descrição + chips)
 3. **Structured Cabling** (id: `cabling`) — miniatura `cabling.jpg`
