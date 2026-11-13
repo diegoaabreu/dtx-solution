@@ -37,7 +37,7 @@ Site institucional da **DTX Solution** — empresa de tecnologia, segurança e T
 ├── public/
 │   └── Assets/                  # Imagens e logos
 │       ├── logo_2025_Icon.png   # Ícone transparente (usado em navbar e footer)
-│       ├── surv4.png            # Card de câmeras de segurança
+│       ├── hero-lobby.jpg       # Hero: visão de câmera do lobby (IA)
 │       ├── tv_orbis.png         # Card Orbis
 │       ├── coding.png           # Card desenvolvimento web
 │       ├── Intercom.png         # Card intercomunicação
@@ -161,10 +161,10 @@ nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], st
 ## Serviços (ordem de exibição)
 
 ### Linha superior — cards featured (lado a lado, lg:grid-cols-2)
-1. **Security Cameras** (id: `cameras`) — tema azul, imagem `surv4.png`
+1. **Security Cameras** (id: `cameras`) — tema azul, imagem `surv2.png`
 2. **Orbis for Buildings** (id: `orbis`) — tema aço (`brand.mist`), imagem `tv_orbis.png`, badge "Subscription"
 
-(Cameras usa `surv2.png`; o Hero usa `surv4.png` como "feed de câmera" com HUD.)
+(O Hero usa `hero-lobby.jpg` (IA) como "feed de câmera" com HUD. `cabling.jpg` teve os cabos recoloridos de roxo para azul.)
 
 ### Lista de especificações (miniatura + ícone + descrição + chips)
 3. **Structured Cabling** (id: `cabling`) — miniatura `cabling.jpg`

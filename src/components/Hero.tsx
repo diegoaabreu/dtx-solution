@@ -86,14 +86,19 @@ export default function Hero() {
           <figure className="relative rounded-xl overflow-hidden bg-brand-panel ring-1 ring-white/10 shadow-2xl shadow-black/50">
             <div className="relative aspect-[16/10] w-full max-w-full">
               <Image
-                src="/Assets/surv4.png"
-                alt="Dome security camera installed in a commercial building"
+                src="/Assets/hero-lobby.jpg"
+                alt="Security camera view of an apartment building lobby"
                 fill
                 priority
-                className="object-cover object-[70%_center] saturate-[0.85]"
+                className="object-cover object-center saturate-[0.9]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div aria-hidden="true" className="absolute inset-0 bg-brand-navy/25 mix-blend-multiply" />
+              <div aria-hidden="true" className="absolute inset-0 bg-brand-navy/15 mix-blend-multiply" />
+              {/* Darken top/bottom edges so the HUD reads over the chairs and ceiling */}
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-gradient-to-b from-brand-dark/35 via-transparent via-30% to-brand-dark/45"
+              />
               <div aria-hidden="true" className="absolute inset-0 scanlines" />
               <div aria-hidden="true" className="absolute inset-3 sm:inset-4 feed-corners opacity-80" />
 
