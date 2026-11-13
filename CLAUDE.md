@@ -169,7 +169,7 @@ nav, hero (specs[], feed), services.items[], process.steps[], trust (items[], st
 ### Lista de especificações (miniatura + ícone + descrição + chips)
 3. **Structured Cabling** (id: `cabling`) — miniatura `cabling.jpg`
 4. **Intercom Systems** (id: `intercom`) — miniatura `intercom-ip.jpg` (gerada por IA)
-5. **Alarm Systems** (id: `alarm`) — alarme de intrusão residencial/comercial (sensores de porta/janela, movimento, monitoramento). **Não é alarme de incêndio.** Centrais DSC e Honeywell. Miniatura `alarm.jpg` (IA — teclado clássico, porta comercial; `object-[80%_center]`)
+5. **Alarm Systems** (id: `alarm`) — alarme de intrusão residencial/comercial (sensores de porta/janela, movimento). **A DTX NÃO oferece monitoramento de alarme** (só de sistemas digitais: câmeras, intercom). **Não é alarme de incêndio.** Centrais DSC e Honeywell. Miniatura `alarm.jpg` (IA — teclado clássico, porta comercial; `object-[80%_center]`)
 6. **IP Telephony** (id: `voip`) — miniatura `voip.jpg` (gerada por IA, telefone Yealink; enquadramento `object-[80%_center]`). Marcas de telefone que a DTX trabalha: Yealink e Grandstream
 7. **Microsoft IT Services** (id: `it`) — miniatura `microsoft-it.jpg` (IA — painel M365/Azure/Exchange, caneca DTX, rack de servidores ao fundo), inclui Microsoft 365 / Office 365
 8. **Website Development** (id: `web`) — miniatura `webdev.jpg` (IA — flat-lay laptop/tablet/celular com site responsivo)
