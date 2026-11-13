@@ -19,6 +19,8 @@ const vendors: Logo[] = [
   { name: "Asterisk", src: "/Assets/asterisk.png", h: "h-12" },
   { name: "Yealink", src: "/Assets/yealink.png", h: "h-7" },
   { name: "Grandstream", src: "/Assets/grandstream.png" },
+  { name: "DSC", src: "/Assets/dsc.png", h: "h-7" },
+  { name: "Honeywell", src: "/Assets/honeywell.png", h: "h-7" },
 ];
 
 /** Optional per-logo height to balance visual weight (wordmarks vs. icon+text marks). */
@@ -54,7 +56,7 @@ export default function Partners() {
           <LogoRow logos={clients} cols="grid-cols-1 sm:grid-cols-3" />
           <div>
             <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-ink/65 mb-3">{t("techTitle")}</h3>
-            <LogoRow logos={vendors} cols="grid-cols-2 sm:grid-cols-4" />
+            <LogoRow logos={vendors} cols="grid-cols-2 md:grid-cols-5" />
           </div>
         </div>
       </div>

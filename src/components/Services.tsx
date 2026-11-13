@@ -4,12 +4,13 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import SectionHeader from "./SectionHeader";
-import { Camera, DoorOpen, Phone, Building2, Server, Network, Monitor, Check, ArrowRight, X } from "lucide-react";
+import { Camera, DoorOpen, ShieldAlert, Phone, Building2, Server, Network, Monitor, Check, ArrowRight, X } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   cameras: Camera,
   cabling: Network,
   intercom: DoorOpen,
+  alarm: ShieldAlert,
   voip: Phone,
   orbis: Building2,
   it: Server,

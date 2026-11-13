@@ -87,6 +87,20 @@
         ]
       },
       {
+        "id": "alarm",
+        "title": "Alarm Systems",
+        "badge": "",
+        "description": "Intrusion alarm systems for homes and businesses. Door and window sensors, motion detection and instant alerts on your phone — arm, disarm and check status from anywhere.",
+        "features": [
+          "Door & window sensors",
+          "Motion detection",
+          "Smartphone arm/disarm",
+          "Monitoring options",
+          "DSC & Honeywell panels",
+          "Residential & commercial"
+        ]
+      },
+      {
         "id": "voip",
         "title": "IP Telephony",
         "badge": "",
@@ -132,7 +146,7 @@
     ],
     "eyebrow": "Services",
     "quoteCta": "Get a Free Quote",
-    "listTitle": "Infrastructure, voice & IT"
+    "listTitle": "Security, infrastructure & IT"
   },
   "trust": {
     "title": "Why Choose DTX Solution",
@@ -203,6 +217,7 @@
       "Security Cameras",
       "Structured Cabling",
       "Intercom Systems",
+      "Alarm Systems",
       "IP Telephony",
       "Orbis for Buildings",
       "Microsoft IT Services",

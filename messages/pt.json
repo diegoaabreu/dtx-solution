@@ -87,6 +87,20 @@
         ]
       },
       {
+        "id": "alarm",
+        "title": "Sistemas de Alarme",
+        "badge": "",
+        "description": "Alarmes contra intrusão para residências e empresas. Sensores de porta e janela, detecção de movimento e alertas instantâneos no celular — arme, desarme e acompanhe de qualquer lugar.",
+        "features": [
+          "Sensores de porta e janela",
+          "Detecção de movimento",
+          "Armar/desarmar pelo celular",
+          "Opções de monitoramento",
+          "Centrais DSC e Honeywell",
+          "Residencial e comercial"
+        ]
+      },
+      {
         "id": "voip",
         "title": "Telefonia IP",
         "badge": "",
@@ -132,7 +146,7 @@
     ],
     "eyebrow": "Serviços",
     "quoteCta": "Solicitar Orçamento",
-    "listTitle": "Infraestrutura, voz e TI"
+    "listTitle": "Segurança, infraestrutura e TI"
   },
   "trust": {
     "title": "Por Que a DTX Solution",
@@ -203,6 +217,7 @@
       "Câmeras de Segurança",
       "Cabeamento Estruturado",
       "Sistemas de Interfone",
+      "Sistemas de Alarme",
       "Telefonia IP",
       "Orbis para Edifícios",
       "Serviços de TI Microsoft",
