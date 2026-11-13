@@ -20,10 +20,18 @@ const iconMap: Record<string, React.ElementType> = {
 // Row thumbnails for the spec list. A service without an entry gets a branded icon panel.
 const rowImageMap: Record<string, string> = {
   intercom: "/Assets/intercom-ip.jpg",
+  alarm: "/Assets/alarm.jpg",
   voip: "/Assets/voip.jpg",
   cabling: "/Assets/cabling.jpg",
   it: "/Assets/microsoft-it.jpg",
   web: "/Assets/webdev.jpg",
+};
+
+// Crop anchor for thumbnails whose subject sits off-center (default: center).
+const rowImagePos: Record<string, string> = {
+  intercom: "object-[75%_center]",
+  voip: "object-[75%_center]",
+  alarm: "object-[80%_center]",
 };
 
 type ServiceItem = {
@@ -134,7 +142,7 @@ export default function Services() {
                             src={rowImageMap[item.id]}
                             alt=""
                             fill
-                            className={`object-cover ${item.id === "voip" || item.id === "intercom" ? "object-[75%_center]" : "object-center"}`}
+                            className={`object-cover ${rowImagePos[item.id] ?? "object-center"}`}
                             sizes="(max-width: 768px) 100vw, 25vw"
                           />
                           <div aria-hidden="true" className="absolute inset-0 bg-brand-dark/15" />
